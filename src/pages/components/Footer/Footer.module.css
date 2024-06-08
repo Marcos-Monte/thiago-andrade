@@ -1,7 +1,7 @@
 /* Containers */
 .footer{
     width: 100%;
-    background-color: var(--color-email);
+    background-color: var(--background-midia);
     color: var(--font-white);
 }
 
@@ -51,8 +51,8 @@
 /* Elements */
 .boxMidias>a{
     padding: .5rem;
-    background-color: var(--background-midia);
-    color: var(--color-midia);
+    background-color: var(--color-midia);
+    color: var(--background-midia);
     border-radius: 1rem;
     text-decoration: none;
 }
@@ -60,14 +60,14 @@
 .image{
     max-width: 165px;
     height: auto;
-    filter: invert();
+    filter: invert(1) hue-rotate(2000deg);
 }
 
 .assignature>a, .containerApoio>a{
     text-decoration: none;
     color: var(--gradient-yellow);
     font-style: italic;
-
+    font-weight: 500;
 }
 
 /* Hover */

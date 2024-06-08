@@ -1,9 +1,6 @@
+import Link from "next/link";
 import { useState } from 'react';
 
-// import Image from "next/image";
-import Link from "next/link";
-
-// import Logo from '../../../../public/logo.webp';
 import styles from './Header.module.css';
 
 import Button, { Menu } from '@/pages/components/Button/Button.jsx';
