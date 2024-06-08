@@ -1,0 +1,81 @@
+/* Containers */
+.footer{
+    width: 100%;
+    background-color: var(--color-email);
+    color: var(--font-white);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 10rem
+}
+
+.containerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.boxMidias{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+/* Elements */
+.boxMidias>a{
+    padding: .5rem;
+    background-color: var(--background-midia);
+    color: var(--color-midia);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.image{
+    max-width: 165px;
+    height: auto;
+    filter: invert();
+}
+
+.containerApoio, .assignature{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.assignature{
+    padding: 2rem 0;
+    border-top: .1rem solid var(--gradient-yellow);
+}
+
+.containerApoio{
+    flex-direction: column;
+}
+
+.assignature>a, .containerApoio>a{
+    text-decoration: none;
+    color: var(--gradient-yellow);
+    font-style: italic;
+
+}
+
+/* Hover */
+.boxMidias>a:hover{
+    background-color: var(--background-hover-midia);
+    color: var(--background-midia)
+}
+
+.assignature>a:hover, .containerApoio>a:hover{
+    color: var(--background-menu)
+}

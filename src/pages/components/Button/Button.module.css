@@ -3,7 +3,7 @@
     background-image: linear-gradient(160deg, var(--gradient-green) 31%, var(--gradient-blue) 95%);
     text-decoration: none !important;
     text-transform: uppercase;
-    color: var(--font-button);
+    color: var(--font-white);
     font-weight: bold;
     padding: 1rem;
     border-radius: 1rem;
@@ -13,7 +13,7 @@
 
 .button:hover{
     background-image: linear-gradient(160deg, var(--gradient-yellow) 31%, var(--gradient-green2) 95%);
-    color: var(--font-hover-button);
+    color: var(--font-black);
     transform: translateX(-20px) rotate(-12deg) scale(1.1);
 }
 

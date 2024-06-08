@@ -1,16 +1,14 @@
 import { useState } from 'react';
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
-import Logo from '../../../../public/logo.webp';
+// import Logo from '../../../../public/logo.webp';
 import styles from './Header.module.css';
 
 import Button, { Menu } from '@/pages/components/Button/Button.jsx';
-
-const face = 'https://www.facebook.com/thiago.andrade.1806?mibextid=LQQJ4d&rdid=88FyjRy733u6yc7g&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FemPU6rKtp5VBqru9%2F%3Fmibextid%3DLQQJ4d'
-const insta = 'https://www.instagram.com/thiagoandrade_013/?igsh=MTVsOWMzeHQ3ajZ4';
-const twitter = 'https://twitter.com/thiago_ujs'
+import Logotype from '@/pages/components/Logotype/Logotype.jsx';
+import Midias from '../Midias/Midias.jsx';
 
 export default function Header(){
 
@@ -28,31 +26,15 @@ export default function Header(){
             {/* Container limitador */}
             <div className={`${styles.container} limit`}>
 
-                {/* Box com ancora para Email */}
-                <div className={styles.boxMail}>
-                    <i className="bi bi-envelope"></i>
-                    <a href="mailto:contato@santosqueeuquero.com.br">
-                        contato@asantosqueeuquero.com.br
-                    </a>
-                </div>
-
                 {/* LogoImagem com ancora para pagina da Telma */}
-                <Link href="https://asantosqueeuquero.com.br/">
-                    <Image className={styles.image} src={Logo} alt='Logo Tipo'/>
-                </Link>
+                <Logotype 
+                    style={styles.image}
+                />
                 
-                {/* Box com Link de navegação para redes sociais */}
-                <nav className={styles.boxMidias}>
-                    <a href={twitter}>
-                        <i className="bi bi-twitter"></i>
-                    </a>
-                    <a href={face}>
-                        <i className="bi bi-facebook"></i>
-                    </a>
-                    <a href={insta}>
-                        <i className="bi bi-instagram"></i>
-                    </a>
-                </nav>                                          
+                {/* Box com Link de navegação para redes sociais */}    
+                <Midias 
+                    style={styles.boxMidias}
+                />
 
                 {/* Botão para enviar proposta (Oculto -> Visivel apenas para resoluções entre 550px e 749px ) */}
                 <Link href={'/enviesuaproposta'}>
@@ -68,7 +50,6 @@ export default function Header(){
                 
             </div>
 
-            {/* Menu que fica visivel em resoluçãos acima de 550px */}
             <div className={`${styles.container} ${styles[visible ? visivel : invisivel]}`}>
 
                 <nav className={`${styles.navigation} limit`}>

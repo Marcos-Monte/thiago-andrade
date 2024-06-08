@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    position: fixed
 }
 
 .container{
@@ -12,12 +13,12 @@
     padding: 1rem;
 }
 
-.boxMail, .boxMidias{
+.boxMidias{
     flex-grow: 1;
     display: flex;
-    /* justify-content: center; */
+    justify-content: flex-end;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
     text-decoration: none;
 }
 
@@ -26,23 +27,6 @@
     height: auto;
 }
 
-.boxMail>a{
-    text-decoration: none;
-    color: var(--color-email);
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.boxMail>i{
-    color: var(--gradient-green);
-}
-
-.boxMidias{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-}
 
 .boxMidias>a{
     padding: .5rem;
@@ -58,7 +42,6 @@
 
 .navigation{
     width: 100%;
-    /* max-height: 82.39px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,13 +69,12 @@
 }
 
 .link:focus, .link:hover{
-    /* background-color: var(--color-midia); */
     color:var(--background-midia);
 }
 
 
 @media screen and (max-width: 749px){
-    .boxMail, .boxMidias{
+    .boxMidias{
         display: none
     }
     .container{

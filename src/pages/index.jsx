@@ -1,7 +1,7 @@
+import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
-import Head from "next/head";
-// import Image from "next/image";
 import styles from "@/styles/Home.module.css";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <div className={`${styles.body}`}>
         <Header />
         <main className={styles.main}></main>
-        <footer></footer>
+        <Footer />
       </div>
     </>
   );
