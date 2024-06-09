@@ -1,0 +1,62 @@
+.containerForm{
+    width: 100%;
+    padding: 5rem 0;
+    box-sizing: border-box;
+}
+
+.legend{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.form, .group, .subGroup, .option{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    border: none
+}
+
+.form{
+    gap: 2rem;
+}
+.group{
+    padding: 1rem;
+}
+
+.subGroup{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.option>input, .option>select, .textArea, .subGroup>input{
+    width: 100%;
+    padding: .5rem;
+    border: solid .05rem black;
+    border-radius: 10px;
+    max-width: 1024px;
+}
+
+.textArea{
+    height: 200px;
+} 
+
+.option{
+    flex-wrap: wrap;
+}
+
+.group>.subGroup>.option{
+    width: 225px;
+    flex-grow: 1;
+}
+
+
+.buttonForm{
+    width: 20%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid .05rem black;
+}

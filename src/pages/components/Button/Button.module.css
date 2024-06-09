@@ -21,6 +21,10 @@
     display: none;
 }
 
+.buttonForm{
+    transform: none !important;
+}
+
 /* Menu */
 .menu{
     display: none;

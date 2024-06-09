@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
 import Banner from "./components/Banner/Banner";
+import Form from "./components/Form/Form";
 import Imagem from '/public/imagemTeste.webp';
 
 export default function proposta() {
@@ -23,8 +24,10 @@ export default function proposta() {
 
                 <Banner 
                     banner={Imagem}
-                    text='Envie sua Proposta'
+                    text='Propostas'
                 />
+
+                <Form />
 
             </main>
 
