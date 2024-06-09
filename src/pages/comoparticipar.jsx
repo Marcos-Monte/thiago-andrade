@@ -10,9 +10,7 @@ export default function comoParticipar() {
     <>
       <Head>
         <title>Como Participar</title>
-        <meta name="description" content="Informações de como a população pode participar do mandato do candidato Thiago Andrade" />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-        <link rel="icon" href="/ico.webp" />      
+        <meta name="description" content="Informações de como a população pode participar do mandato do candidato Thiago Andrade" />    
       </Head>
       <div className={`${styles.body}`}>
         <Header />

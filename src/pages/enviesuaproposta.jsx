@@ -1,8 +1,11 @@
-import styles from "@/styles/Home.module.css";
 import Head from "next/head";
+
+import styles from "@/styles/Home.module.css";
 
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
+import Banner from "./components/Banner/Banner";
+import Imagem from '/public/imagemTeste.webp';
 
 export default function proposta() {
 
@@ -10,15 +13,21 @@ export default function proposta() {
         <>
         <Head>
             <title>Envie sua Proposta</title>
-            <meta name="description" content="Envie suas propostas para o candidato Thiago Andrade" />
-            {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-            <link rel="icon" href="/ico.webp" />      
+            <meta name="description" content="Envie suas propostas para o candidato Thiago Andrade" />    
         </Head>
         <div className={`${styles.body}`}>
+
             <Header />
+
             <main className={styles.main}>
-                Envie sua Proposta
+
+                <Banner 
+                    banner={Imagem}
+                    text='Envie sua Proposta'
+                />
+
             </main>
+
             <Footer />
         </div>
         </>

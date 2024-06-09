@@ -1,6 +1,7 @@
 .header{
     width: 100%;
-    position: fixed
+    /* position: fixed; */
+    background-color: var(--menu-link-color);
 }
 
 .container{
@@ -109,6 +110,7 @@
 
     .menuHidden{
         display: none;
+        z-index: 2;
     }
 
 }

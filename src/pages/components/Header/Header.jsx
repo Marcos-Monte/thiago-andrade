@@ -14,6 +14,7 @@ export default function Header(){
     const [visible, setVisible] = useState(false);
 
     function handleVisible(){
+        {console.log('Abriu')}
         setVisible(!visible)
     }
 
@@ -48,7 +49,7 @@ export default function Header(){
             </div>
 
             <div className={`${styles.container} ${styles[visible ? visivel : invisivel]}`}>
-
+                
                 <nav className={`${styles.navigation} limit`}>
                     <Link className={styles.link}href={'/'}>Inicio</Link>
                     <Link className={styles.link}href={'/quemsomos'}>Quem Somos</Link>

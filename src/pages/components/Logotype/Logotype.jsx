@@ -5,7 +5,7 @@ import Logo from '/public/logo.webp';
 export default function Logotype(props){
     return(
         <Link href="https://asantosqueeuquero.com.br/">
-                    <Image className={props.style} src={Logo} alt='Logo Tipo'/>
-            </Link>
+            <Image className={props.style} src={Logo} alt='Logo Tipo' priority></Image>
+        </Link>
     )
 }

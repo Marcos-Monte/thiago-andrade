@@ -10,9 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Thiago Andrade</title>
-        <meta name="description" content="Feed do Candidato a Vereador da cidade de Santos, Thiago Andrade" />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-        <link rel="icon" href="/ico.webp" />      
+        <meta name="description" content="Feed do Candidato a Vereador da cidade de Santos, Thiago Andrade" />      
       </Head>
       <div className={`${styles.body}`}>
         <Header />
