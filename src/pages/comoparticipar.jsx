@@ -3,6 +3,8 @@ import Head from "next/head";
 
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
+import Banner from "./components/Banner/Banner";
+import Imagem from '/public/imagemTeste.webp';
 
 export default function comoParticipar() {
 
@@ -15,7 +17,11 @@ export default function comoParticipar() {
       <div className={`${styles.body}`}>
         <Header />
         <main className={styles.main}>
-          Como Participar
+          <Banner 
+            banner={Imagem}
+            text='Como Participar'
+          />
+          
         </main>
         <Footer />
       </div>

@@ -1,6 +1,7 @@
 .header{
     width: 100%;
-    /* position: fixed; */
+    /* position: relative; */
+    z-index: 10;
     background-color: var(--menu-link-color);
 }
 
@@ -99,7 +100,6 @@
         position: absolute;
         bottom: -1;
         width: 50%;
-        font-size: 12px;
         border-radius: 1px 10px 10px 1px;
         box-shadow: 3px 3px 10px var(--menu-shadow);
     }
@@ -107,10 +107,13 @@
     .container:last-child > .navigation{
         flex-direction: column;
     }
+    .link{
+        font-size: 12px;
+    }
 
     .menuHidden{
         display: none;
-        z-index: 2;
+        /* z-index: 2; */
     }
 
 }

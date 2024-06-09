@@ -14,7 +14,6 @@ export default function Header(){
     const [visible, setVisible] = useState(false);
 
     function handleVisible(){
-        {console.log('Abriu')}
         setVisible(!visible)
     }
 

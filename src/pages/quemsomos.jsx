@@ -3,6 +3,8 @@ import Head from "next/head";
 
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
+import Banner from "./components/Banner/Banner";
+import Imagem from '/public/imagemTeste.webp';
 
 export default function quemSomos() {
 
@@ -15,7 +17,10 @@ export default function quemSomos() {
         <div className={`${styles.body}`}>
             <Header />
             <main className={styles.main}>
-                Quem Somos
+                <Banner 
+                    banner={Imagem}
+                    text='Quem Somos'
+                />
             </main>
             <Footer />
         </div>
