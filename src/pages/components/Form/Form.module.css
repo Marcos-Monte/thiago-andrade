@@ -64,21 +64,18 @@
     margin-bottom: 1rem;
 }
 
+.label{
+    color: var(--background-menu);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 .group>.subGroup>.option{
     width: 225px;
     flex-grow: 1;
 }
 
-
-/* .buttonForm{
-    width: 20%;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: solid .05rem black;
-} */
-
 /* Hover */
-.option>input:hover, .option>select:hover, .textArea:hover, .subGroup>input:hover{
+.option>input:hover, .option>select:hover, .select>option:hover, .textArea:hover, .subGroup>input:hover{
     background-color: var(--gradient-yellow);
 }
