@@ -20,6 +20,7 @@ export default function comoParticipar() {
           <Banner 
             banner={Imagem}
             text='Como Participar'
+            style='containerBanner'
           />
           
         </main>

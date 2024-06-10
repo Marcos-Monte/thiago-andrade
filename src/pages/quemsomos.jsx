@@ -20,6 +20,7 @@ export default function quemSomos() {
                 <Banner 
                     banner={Imagem}
                     text='Quem Somos'
+                    style='containerBanner'
                 />
             </main>
             <Footer />

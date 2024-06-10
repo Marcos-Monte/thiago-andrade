@@ -25,6 +25,7 @@ export default function proposta() {
                 <Banner 
                     banner={Imagem}
                     text='Propostas'
+                    style='containerBanner'
                 />
 
                 <Form />

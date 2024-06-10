@@ -21,6 +21,7 @@ export default function noticias() {
             <Banner 
                 banner={Imagem}
                 text='Noticias'
+                style='containerBanner'
             /> 
             </main>
             <Footer />

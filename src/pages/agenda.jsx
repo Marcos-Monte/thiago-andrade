@@ -20,6 +20,7 @@ export default function agenda() {
                 <Banner 
                     banner={Imagem}
                     text='Agenda'
+                    style='containerBanner'
                 />
             </main>
             <Footer />

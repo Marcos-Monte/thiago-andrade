@@ -23,6 +23,9 @@
 
 .buttonForm{
     transform: none !important;
+    width: 200px !important;
+    margin: 0 auto;
+    display: block !important;
 }
 
 /* Menu */

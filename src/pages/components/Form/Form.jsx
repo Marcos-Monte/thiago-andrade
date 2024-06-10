@@ -5,31 +5,31 @@ function Proposta(){
     return(
         <fieldset className={styles.group}>
 
-                            <legend className={styles.legend}>Dados da sua proposta</legend>
-                            
-                            <div className={styles.option}>
-                                <label htmlFor="id-titulo">Titulo</label>
-                                <input name='title' id='id-titulo' type="text" placeholder="Digite o titulo da sua proposta"/>
-                            </div>
+            <legend className={styles.legend}>Dados da sua proposta</legend>
+            
+            <div className={styles.option}>
+                <label htmlFor="id-titulo">Titulo</label>
+                <input name='title' id='id-titulo' type="text" placeholder="Digite o titulo da sua proposta"/>
+            </div>
 
-                            <div className={styles.option}>
-                            <label htmlFor="id-tema">Tema</label>
-                                <select name="themes" id="id-tema" required>
-                                    <option selected value="">Escolha o tema aqui --</option>
-                                    <option value="instituto">Instituto Federal na ZN</option>
-                                    <option value="instituto">Instituto Federal na ZN</option>
-                                    <option value="instituto">Instituto Federal na ZN</option>
-                                    <option value="instituto">Instituto Federal na ZN</option>
-                                    <option value="instituto">Instituto Federal na ZN</option>
-                                </select>
-                            </div>
+            <div className={styles.option}>
+            <label htmlFor="id-tema">Tema</label>
+                <select name="themes" id="id-tema" required>
+                    <option selected value="">Escolha o tema aqui --</option>
+                    <option value="instituto">Instituto Federal na ZN</option>
+                    <option value="instituto">Instituto Federal na ZN</option>
+                    <option value="instituto">Instituto Federal na ZN</option>
+                    <option value="instituto">Instituto Federal na ZN</option>
+                    <option value="instituto">Instituto Federal na ZN</option>
+                </select>
+            </div>
 
-                            <div className={styles.option}>
-                                <label htmlFor="id-proposta">Proposta</label>
-                                <textarea className={styles.textArea} name="proposta" id="id-proposta" placeholder="Digite aqui a sua ideia para o plano de governo"></textarea>
-                            </div>
+            <div className={styles.option}>
+                <label htmlFor="id-proposta">Proposta</label>
+                <textarea className={styles.textArea} name="proposta" id="id-proposta" placeholder="Digite aqui a sua ideia para o plano de governo"></textarea>
+            </div>
 
-                        </fieldset>
+        </fieldset>
     )
 }
 
@@ -71,17 +71,20 @@ export default function Form(){
     return(
         <section className={`${styles.containerForm} limit`}>
 
-                    <form className={styles.form} action="" method="post">
+            <div className={styles.content}>
+                <h3>Envie sua proposta para nossa cidade</h3>
+                <p>Esse espaço é seu, é de todos nós que queremos uma Santos mais desenvolvida, sem esquecer de ninguém. Envie sua proposta para a construção da Cidade Que Queremos.</p>
+            </div>
 
-                        <Proposta />
+            <form className={styles.form} action="" method="post">
 
-                        <Data />
+                <Proposta />
 
-                        {/* <button  className={styles.buttonForm}type="submit">Enviar</button> */}
+                <Data />
 
-                        <ButtonForm style='buttonForm' />
+                <ButtonForm style='buttonForm' />
 
-                    </form>
-                </section>
+            </form>
+        </section>
     )
 }

@@ -20,7 +20,7 @@ export default function Home() {
           <Banner 
             banner={Imagem}
             text='Inicio'
-            style={'bannerCover'}
+            style='bannerCover'
           />        
         </main>
         <Footer />

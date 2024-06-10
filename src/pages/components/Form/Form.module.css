@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+.content{
+    text-align: center;
+    width: 70%;
+    margin: 3rem auto;
+    color: var(--color-email)
+}
+
+.content>h3{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--background-midia)
+}
+
 .legend{
     width: 100%;
     text-align: center;
     padding: 1rem 0;
+    color: var(--color-email);
+    font-size: 2rem;
 }
 
 .form, .group, .subGroup, .option{
@@ -34,17 +49,19 @@
 .option>input, .option>select, .textArea, .subGroup>input{
     width: 100%;
     padding: .5rem;
-    border: solid .05rem black;
+    border: solid .05rem var(--font-black);
     border-radius: 10px;
     max-width: 1024px;
 }
 
 .textArea{
     height: 200px;
+    width: 100%
 } 
 
 .option{
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .group>.subGroup>.option{
@@ -53,10 +70,15 @@
 }
 
 
-.buttonForm{
+/* .buttonForm{
     width: 20%;
     margin: 0 auto;
     padding: 1rem;
     border-radius: 10px;
     border: solid .05rem black;
+} */
+
+/* Hover */
+.option>input:hover, .option>select:hover, .textArea:hover, .subGroup>input:hover{
+    background-color: var(--gradient-yellow);
 }

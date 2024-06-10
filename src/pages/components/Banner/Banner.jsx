@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Banner(props){
     console.log(props.style)
     return(
-        <section className={`${styles[props.style]} ${styles.containerBanner}`}>
+        <section className={` ${styles[props.style]}`}>
 
             <Image className={`${styles.banner}`}src={props.banner} alt="Imagem teste" priority />
 
