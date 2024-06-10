@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styles from './Footer.module.css';
 
 import Logotype from '../Logotype/Logotype';
@@ -12,6 +14,10 @@ export default function Footer(){
 
                 <div className={styles.containerLinks}>
 
+                <Link href="">
+                    <i className={`bi bi-arrow-up-circle ${styles.toTheTop}`}></i>
+                </Link>
+                
                     <Logotype style={styles.image} />
 
                     <Midias style={styles.boxMidias} />
@@ -27,6 +33,8 @@ export default function Footer(){
                 Desenvolvido por<a href="https://www.linkedin.com/in/montemarcos/">@Marcos Monte</a>
                 
             </p>
+
+            
         </footer>
     )
 }

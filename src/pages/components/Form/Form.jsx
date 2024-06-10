@@ -9,7 +9,7 @@ function Proposta(){
             
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-titulo">Titulo</label>
-                <input name='title' id='id-titulo' type="text" placeholder="Digite o titulo da sua proposta"/>
+                <input name='title' id='id-titulo' type="text" placeholder="Digite o titulo da sua proposta" required/>
             </div>
 
             <div className={styles.option}>
@@ -24,7 +24,7 @@ function Proposta(){
 
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-proposta">Proposta</label>
-                <textarea className={styles.textArea} name="proposta" id="id-proposta" placeholder="Digite aqui a sua ideia para o plano de governo"></textarea>
+                <textarea className={styles.textArea} name="proposta" id="id-proposta" placeholder="Digite aqui a sua ideia para o plano de governo" required></textarea>
             </div>
 
         </fieldset>
@@ -39,19 +39,19 @@ function Data(){
 
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-name">Nome</label>
-                <input name='name' id='id-name' type="text" placeholder="Digite seu nome completo aqui"/>
+                <input name='name' id='id-name' type="text" placeholder="Digite seu nome completo aqui" required/>
             </div>
 
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-email">E-mail</label>
-                <input name='email' id='id-email' type="email" placeholder="exemplo@exemplo.com"/>
+                <input name='email' id='id-email' type="email" placeholder="exemplo@exemplo.com" required/>
             </div>
 
             <div className={styles.subGroup}>
                 
                 <div className={styles.option}>
                     <label className={styles.label} htmlFor="id-tel">Telefone</label>
-                    <input name='phone' id='id-tel' type="tel"placeholder="(xx)xxxxx-xxxx" />
+                    <input name='phone' id='id-tel' type="tel"placeholder="(xx)xxxxx-xxxx" required/>
                 </div>
                 
                 <div className={styles.option}>

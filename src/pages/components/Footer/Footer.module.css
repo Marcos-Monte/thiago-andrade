@@ -13,7 +13,8 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem;
-    gap: 10rem
+    gap: 10rem;
+    position: relative;
 }
 
 .containerLinks{
@@ -70,10 +71,31 @@
     font-weight: 500;
 }
 
+.toTheTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    font-size: 50px;
+    color: var(--gradient-yellow);
+    background-color: var(--background-menu);
+}
+
+
 /* Hover */
 .boxMidias>a:hover{
     background-color: var(--background-hover-midia);
     color: var(--background-midia)
+}
+
+.toTheTop:hover{
+    bottom: 170px;
+    transition: transform 8s ease;
 }
 
 .assignature>a:hover, .containerApoio>a:hover{
