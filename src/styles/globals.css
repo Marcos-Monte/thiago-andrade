@@ -21,17 +21,19 @@ html{
 }
 
 :root{
-  --color-email: #7a7a7a;
-  --gradient-green: #34BF02;
-  --gradient-blue: #0093E3;
-  --gradient-yellow: #FFB500;
-  --gradient-green2: #8FEC02;
-  --font-white: #fff;
-  --font-black: #000;
-  --background-midia: #1177ee;
-  --color-midia: #fff;
-  --background-hover-midia: #FFB500;
-  --background-menu: #FF0000;
-  --menu-link-color: #fff;
-  --menu-shadow: #7a7a7a;
+  /* Global Test */
+  --primary: #BF526F;
+  --primary-lightiest: #E4859D;
+  --secondary: #9E9404;
+  --secondary-lightiest: #F0E319;
+  /* --prom: #7D8CC4; */
+    --prom: #00175b;
+  /* Datails */
+  --light-font: #fff;
+  --dark-font: #000;
+  --prom-font: #7a7a7a;
+  --hover: #ece5e5;
+  --shadow: #7a7a7a;
 }
+
+

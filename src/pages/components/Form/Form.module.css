@@ -8,20 +8,20 @@
     text-align: center;
     width: 70%;
     margin: 3rem auto;
-    color: var(--color-email)
+    color: var(--prom-font)
 }
 
 .content>h3{
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: var(--background-midia)
+    color: var(--primary)
 }
 
 .legend{
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    color: var(--color-email);
+    color: var(--prom-font);
     font-size: 2rem;
 }
 
@@ -49,7 +49,7 @@
 .option>input, .option>select, .textArea, .subGroup>input{
     width: 100%;
     padding: .5rem;
-    border: solid .05rem var(--font-black);
+    border: solid .05rem var(--dark-font);
     border-radius: 10px;
     max-width: 1024px;
 }
@@ -65,7 +65,7 @@
 }
 
 .label{
-    color: var(--background-menu);
+    color: var(--primary);
     font-weight: bold;
     font-size: 1.4rem;
 }
@@ -77,5 +77,5 @@
 
 /* Hover */
 .option>input:hover, .option>select:hover, .select>option:hover, .textArea:hover, .subGroup>input:hover{
-    background-color: var(--gradient-yellow);
+    background-color: var(--hover);
 }

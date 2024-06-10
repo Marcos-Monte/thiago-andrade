@@ -1,8 +1,8 @@
 /* Containers */
 .footer{
     width: 100%;
-    background-color: var(--background-midia);
-    color: var(--font-white);
+    background-color: var(--primary-lightiest);
+    color: var(--light-font);
 }
 
 .container{
@@ -42,7 +42,7 @@
 
 .assignature{
     padding: 2rem 0;
-    border-top: .1rem solid var(--gradient-yellow);
+    border-top: .1rem solid var(--primary);
 }
 
 .containerApoio{
@@ -52,8 +52,8 @@
 /* Elements */
 .boxMidias>a{
     padding: .5rem;
-    background-color: var(--color-midia);
-    color: var(--background-midia);
+    background-color: var(--primary);
+    color: var(--primary-lightiest);
     border-radius: 1rem;
     text-decoration: none;
 }
@@ -61,12 +61,13 @@
 .image{
     max-width: 165px;
     height: auto;
-    filter: invert(1) hue-rotate(2000deg);
+    filter: hue-rotate(2000deg);
+    /* filter: invert(1) hue-rotate(2000deg); */
 }
 
 .assignature>a, .containerApoio>a{
     text-decoration: none;
-    color: var(--gradient-yellow);
+    color: var(--light-font);
     font-style: italic;
     font-weight: 500;
 }
@@ -82,24 +83,27 @@
     height: 70px;
     border-radius: 100px;
     font-size: 50px;
-    color: var(--gradient-yellow);
-    background-color: var(--background-menu);
+    color: var(--secondary-lightiest);
+    background-color: var(--secondary);
+    transition: transform 8s ease;
 }
 
 
 /* Hover */
 .boxMidias>a:hover{
-    background-color: var(--background-hover-midia);
-    color: var(--background-midia)
+    background-color: var(--prom);
+    color: var(--primary)
 }
 
 .toTheTop:hover{
     bottom: 190px;
     transition: transform 8s ease;
+    color: var(--secondary);
+    background-color: var(--secondary-lightiest);
 }
 
 .assignature>a:hover, .containerApoio>a:hover{
-    color: var(--background-menu)
+    color: var(--prom)
 }
 
 /* Resolução abaixo de 550px */

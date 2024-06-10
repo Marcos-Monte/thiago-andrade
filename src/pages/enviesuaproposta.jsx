@@ -6,14 +6,16 @@ import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
 import Banner from "./components/Banner/Banner";
 import Form from "./components/Form/Form";
-import Imagem from '/public/imagemTeste.webp';
+import Imagem from '/public/umasosantos2.png';
 
 export default function proposta() {
+
+    const title = 'Propostas';
 
     return (
         <>
         <Head>
-            <title>Envie sua Proposta</title>
+            <title>{`Envie suas ${title}`}</title>
             <meta name="description" content="Envie suas propostas para o candidato Thiago Andrade" />    
         </Head>
         <div className={`${styles.body}`}>
@@ -24,7 +26,7 @@ export default function proposta() {
 
                 <Banner 
                     banner={Imagem}
-                    text='Propostas'
+                    text={title}
                     style='containerBanner'
                 />
 

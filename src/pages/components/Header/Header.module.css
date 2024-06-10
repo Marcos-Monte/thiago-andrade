@@ -2,7 +2,7 @@
     width: 100%;
     /* position: relative; */
     z-index: 10;
-    background-color: var(--menu-link-color);
+    background-color: var(--primary);
 }
 
 .container{
@@ -27,19 +27,20 @@
 .image{
     max-width: 165px;
     height: auto;
+    filter: hue-rotate(2000deg)
 }
 
 
 .boxMidias>a{
     padding: .5rem;
-    background-color: var(--background-midia);
-    color: var(--color-midia);
+    background-color: var(--primary-lightiest);
+    color: var(--primary);
     border-radius: 10px;
     text-decoration: none;
 }
 
 .container:nth-child(even){
-    background-color: var(--background-menu)
+    background-color: var(--primary-lightiest)
 }
 
 .navigation{
@@ -52,7 +53,7 @@
 
 .link{
     text-decoration: none;
-    color: var(--menu-link-color);
+    color: var(--secondary-lightiest);
     font-weight: bold;
     padding: .8rem;
     border-radius: 1rem;
@@ -66,12 +67,12 @@
 
 /* Hover */
 .boxMidias>a:hover{
-    background-color: var(--background-hover-midia);
-    color: var(--background-midia)
+    background-color: var(--prom);
+    color: var(--primary-lightiest)
 }
 
 .link:focus, .link:hover{
-    color:var(--background-midia);
+    color:var(--prom);
 }
 
 
@@ -93,7 +94,7 @@
     .container{
         flex-direction: row-reverse;
         align-items: center;
-        border-bottom: 1px solid var(--background-menu);
+        /* border-bottom: 1px solid var(--shadow); */
     }
 
     .container:last-child{
@@ -101,7 +102,7 @@
         bottom: -1;
         width: 50%;
         border-radius: 1px 10px 10px 1px;
-        box-shadow: 3px 3px 10px var(--menu-shadow);
+        box-shadow: 3px 3px 10px var(--shadow);
     }
 
     .container:last-child > .navigation{
