@@ -8,3 +8,20 @@
     height: 100%;;
 }
 
+.conteudoTeste{
+    padding: 3rem .5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.conteudoTeste>h2{
+    text-align: center;
+    color: var(--background-midia)
+}
+
