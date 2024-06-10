@@ -76,7 +76,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 150px;
+    bottom: 170px;
     right: 50px;
     width: 70px;
     height: 70px;
@@ -94,7 +94,7 @@
 }
 
 .toTheTop:hover{
-    bottom: 170px;
+    bottom: 190px;
     transition: transform 8s ease;
 }
 
@@ -107,6 +107,12 @@
     .container{
         flex-direction: column;
         gap: 2rem;
+    }
+    .toTheTop{
+        bottom: 320px
+    }
+    .toTheTop:hover{
+        bottom: 340px
     }
 
 }
