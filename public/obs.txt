@@ -1,0 +1,13 @@
+1- Imagens: 
+    - Principal e em demais componentes
+    - Deixar de um jeito que não comprime
+    - Sugestão de colocar como Background, para que ao diminuir a resolução vai cortando as bordas
+        - Colocar um 'min-width' para travar no tamanho mínimo da imagem.
+
+2 - Links:
+    - Ao clicar deve abrir outra pagina
+    - É ruim sair do site Principal
+
+3 - Envie sua Proposta
+    - Adicionar mascaras nos campos: CEP, telefone, etc
+    - Para garantir que sejam digitados no formato correto (Sem caracteres indesejados)
