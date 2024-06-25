@@ -8,21 +8,16 @@
     padding: 1rem;
     border-radius: 1rem;
     border: none;
-    /* transition: transform 0.3s ease; */
+    
 }
 
 .button:hover{
     background-image: linear-gradient(160deg, var(--secondary) 31%, var(--secondary-lightiest) 95%);
     color: var(--light-font);
-    /* transform: translateX(-20px) rotate(-12deg) scale(1.1); */
 }
 
-.button2{
-    display: none;
-}
-
+/* Button Form */
 .buttonForm{
-    /* transform: none !important; */
     width: 200px !important;
     margin: 0 auto;
     display: block !important;
@@ -33,32 +28,8 @@
     padding: .4rem
 }
 
-/* Menu */
-.menu{
-    display: none;
-    border: none;
-}
-
-.menuIcon{
-    font-size: 45px;
-}
-
-@media screen and (max-width: 749px){
-    .button{
-        display: none;
-    }
-    .button2{
-        display: block;
-    }
-}
 
 @media screen and (max-width: 550px){
-    .button2{
-        display: none !important;
-    }
-    .menu{
-        display: block;
-    }
     .button{
         display: block;
         font-size: 12px !important;

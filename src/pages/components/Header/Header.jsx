@@ -26,7 +26,7 @@ export default function Header(){
                 />
                 <nav className={`${styles.navigation} limit`}>
                     <Link className={styles.link}href={'/'}>Inicio</Link>
-                    <Link className={styles.link}href={'/quemsomos'}>Quem Somos</Link>
+                    <Link className={styles.link}href={'/manifesto'}>Manifesto</Link>
                 </nav>
 
                 {/* <Menu 

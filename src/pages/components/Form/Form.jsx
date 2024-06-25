@@ -1,11 +1,15 @@
 import styles from '@/pages/components/Form/Form.module.css';
-import { ButtonForm } from '../Button/Button';
+import Button from '../Button/Button';
 
 function Proposta(){
     return(
         <fieldset className={styles.group}>
 
-            <legend className={styles.legend}>Dados da sua proposta</legend>
+            <legend className={styles.legend}>Deixe sua Proposta</legend>
+
+            <div className={styles.content}>
+                <p>Esse espaço é seu, é de todos nós que queremos uma Santos mais desenvolvida, sem esquecer de ninguém. Envie sua proposta para a construção da Cidade Que Queremos.</p>
+            </div>
             
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-titulo">Titulo</label>
@@ -69,18 +73,13 @@ export default function Form(){
     return(
         <section className={`${styles.containerForm} limit`}>
 
-            <div className={styles.content}>
-                <h3>Envie sua proposta para nossa cidade</h3>
-                <p>Esse espaço é seu, é de todos nós que queremos uma Santos mais desenvolvida, sem esquecer de ninguém. Envie sua proposta para a construção da Cidade Que Queremos.</p>
-            </div>
-
             <form className={styles.form} action="" method="post">
 
-                <Data />
+                {/* <Data /> */}
                 
                 <Proposta />
 
-                <ButtonForm style='buttonForm' />
+                <Button style='buttonForm' text='Enviar'/>
 
             </form>
         </section>

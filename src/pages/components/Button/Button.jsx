@@ -18,15 +18,3 @@ export function Menu(props){
         </div>
     )
 }
-
-export function ButtonForm(props){
-    return(
-        <button  className={`${styles.button} ${styles[props.style]}`}type="submit">Enviar</button>
-    )
-}
-
-export function ButtonNewsletter(props){
-    return(
-        <button className={`${styles.button} ${styles[props.style]}`}type="submit">Assine Já!</button>
-    )
-}

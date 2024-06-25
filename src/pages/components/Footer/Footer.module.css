@@ -7,12 +7,11 @@
 
 .container{
     width: 100%;
-    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 10rem;
     position: relative;
 }
@@ -58,8 +57,6 @@
 .image{
     max-width: 165px;
     height: auto;
-    filter: hue-rotate(2000deg);
-    /* filter: invert(1) hue-rotate(2000deg); */
 }
 
 .assignature>a{
@@ -101,20 +98,20 @@
 
 .assignature>a:hover{
     color: var(--secondary);
-    font-weight: bold;
+    text-decoration: underline;
 }
 
-/* Resolução abaixo de 550px */
-@media screen and (max-width: 550px){
+/* Resolução abaixo de 650px */
+@media screen and (max-width: 650px){
     .container{
         flex-direction: column;
         gap: 2rem;
     }
-    .toTheTop{
+    /* .toTheTop{
         bottom: 320px
     }
     .toTheTop:hover{
         bottom: 340px
-    }
+    } */
 
 }

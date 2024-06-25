@@ -1,15 +1,47 @@
+import Logotype from '../Logotype/Logotype';
+
 import styles from '@/pages/components/Banner/Banner.module.css';
 
-import Image from 'next/image';
-
-export default function Banner(props){
-    console.log(props.style)
+export function BannerPrimary(props){
     return(
-        <section className={` ${styles[props.style]}`}>
+        <section className={` ${styles.primary}`}>
 
-            <Image className={`${styles.banner}`}src={props.banner} alt="Imagem teste" priority />
+                <Logotype 
+                        style={styles.image}
+                />
 
-            <h2>{props.text}</h2>
+            <div className={styles.primaryContent}>
+                <h2 className={styles.primaryTitle}>
+                    ”diálogo, trabalho, coragem”
+                </h2>
+                <span className={styles.text}>
+                    {props.text}
+                </span>
+            </div>
+            
+            
+        </section>
+    )
+}
+
+
+
+export function BannerSecondary(props){
+    return(
+        <section className={` ${styles.secondary}`}>
+
+                <Logotype 
+                        style={styles.image}
+                />
+
+            <div className={styles.secondaryContent}>
+                <h2 className={styles.secondaryTitle}>
+                    ”diálogo, trabalho, coragem”
+                </h2>
+                <span className={styles.text}>
+                    {props.text}
+                </span>
+            </div>
             
         </section>
     )

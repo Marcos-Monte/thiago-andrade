@@ -1,4 +1,3 @@
-import Link from 'next/link';
 
 import styles from './Footer.module.css';
 
@@ -14,9 +13,9 @@ export default function Footer(){
 
                 <div className={styles.containerLinks}>
 
-                <Link href="">
+                {/* <Link href="">
                     <i className={`bi bi-arrow-up-circle ${styles.toTheTop}`}></i>
-                </Link>
+                </Link> */}
                 
                     <Logotype style={styles.image} />
 

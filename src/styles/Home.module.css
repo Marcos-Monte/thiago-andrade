@@ -5,7 +5,6 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    height: 100%;;
 }
 
 .conteudoTeste{
@@ -21,8 +20,9 @@
     color: var(--prom-font)
 }
 
-.conteudoTeste>h2{
+.title{
     text-align: center;
-    color: var(--primary)
+    color: var(--primary);
+    font-size: 2rem;
 }
 

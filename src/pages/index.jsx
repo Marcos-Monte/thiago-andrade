@@ -3,8 +3,8 @@ import Head from "next/head";
 
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
-import Banner from "./components/Banner/Banner";
-import Imagem from '/public/umasosantos2.png';
+import { BannerPrimary } from "./components/Banner/Banner";
+// import Imagem from '/public/umasosantos2.png';
 
 export default function Home() {
 
@@ -19,13 +19,15 @@ export default function Home() {
       <div className={`${styles.body}`}>
         <Header />
         <main className={styles.main}>
-          <Banner 
-            banner={Imagem}
-            // text='Inicio'
-            style='bannerCover'
+          <BannerPrimary 
+            // banner={Imagem}
+            title='”diálogo, trabalho, coragem”'
+            text='Conheça mais sobre'
           />   
           <div className={`${styles.conteudoTeste} limit`}>
-            <h2>{title}</h2>
+            <h1 className={styles.title}>
+              {title}
+            </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis numquam rerum delectus quos molestiae debitis eligendi magni voluptatibus, enim, optio hic porro iusto dolorem quisquam similique aperiam nesciunt quibusdam!
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolorem dolore ex beatae aut natus libero vel fuga, nam eveniet. Sint nesciunt repudiandae provident aut debitis magni possimus nobis harum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga sapiente debitis aut eum iusto eos accusamus alias nesciunt vitae porro itaque sed doloribus, dolorem ullam incidunt perspiciatis ut atque!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis numquam rerum delectus quos molestiae debitis eligendi magni voluptatibus, enim, optio hic porro iusto dolorem quisquam similique aperiam nesciunt quibusdam!
