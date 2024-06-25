@@ -2,7 +2,7 @@ import Logotype from '../Logotype/Logotype';
 
 import styles from '@/pages/components/Banner/Banner.module.css';
 
-export function BannerPrimary(props){
+export default function BannerPrimary(props){
     return(
         <section className={` ${styles.primary}`}>
 

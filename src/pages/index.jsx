@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
-import { BannerPrimary } from "./components/Banner/Banner";
+import BannerPrimary from "./components/Banner/Banner";
 // import Imagem from '/public/umasosantos2.png';
 
 export default function Home() {
