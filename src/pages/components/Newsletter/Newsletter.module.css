@@ -1,0 +1,31 @@
+.formNewsletter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem
+}
+
+.label{
+    font-style: italic;
+}
+
+.input{
+    border-radius: .5rem;
+    border: none;
+    padding: .2rem;
+}
+
+
+
+

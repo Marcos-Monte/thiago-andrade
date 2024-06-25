@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/rawline');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   line-height: 1.15;
   font-size: 1rem;
-  font-family: 'Rawline', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   text-decoration: none;
 }
 
@@ -22,12 +22,18 @@ html{
 
 :root{
   /* Global Test */
-  --primary: #BF526F;
+  /* --primary: #BF526F;
   --primary-lightiest: #E4859D;
   --secondary: #9E9404;
-  --secondary-lightiest: #F0E319;
-  /* --prom: #7D8CC4; */
-    --prom: #00175b;
+  --secondary-lightiest: #F0E319; 
+  --prom: #00175b;*/
+
+  /* Global Definitive */
+  --primary: #362971;
+  --primary-lightiest:#1fb5b4;
+  --secondary:#e5325a;
+  --secondary-lightiest: #eec013;
+    
   /* Datails */
   --light-font: #fff;
   --dark-font: #000;
@@ -35,5 +41,7 @@ html{
   --hover: #ece5e5;
   --shadow: #7a7a7a;
 }
+
+  
 
 

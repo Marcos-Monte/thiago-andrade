@@ -28,6 +28,11 @@
     display: block !important;
 }
 
+/* Button Newsletter */
+.assign{
+    padding: .4rem
+}
+
 /* Menu */
 .menu{
     display: none;

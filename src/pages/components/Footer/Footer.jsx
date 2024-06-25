@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 
 import Logotype from '../Logotype/Logotype';
 import Midias from '../Midias/Midias';
-import Supporters from '../Supporters/Supporters';
+import FormNewsletter from '../Newsletter/Newsletter.jsx';
 
 export default function Footer(){
     return(
@@ -24,7 +24,7 @@ export default function Footer(){
 
                 </div>
 
-                <Supporters style={styles.containerApoio}/>
+                <FormNewsletter style={styles.formNewsletter}/>
 
             </div>
 
