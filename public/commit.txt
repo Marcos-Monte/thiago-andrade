@@ -1,0 +1,36 @@
+Alterações feitas mediante solicitação de Angela:
+
+PALETA DE CORES
+    Primaria #BF526F ---> #362971
+    Primaria Light #E4859D; ---> #1fb5b4
+    Secundaria #9E9404; ---> #e5325a
+    Secundaria Light #F0E319; ---> #eec013
+
+Topo:
+    - link das páginas 
+    - logotipo (branco)
+
+⁠RODAPÉ:
+    - logotipo (por enquanto, branco)
+    - redes sociais
+    - formulário: nome, bairro, WhatsApp
+
+
+HOME
+    - Capa:
+        - foto (Imagem Teste)
+        - logotipo (Preto)
+        - Titulo: ”diálogo, trabalho, coragem”
+        - Texto: conheça mais sobre 
+
+
+Manifesto
+    - Capa:
+        - foto (Imagem Teste)
+        - logotipo (Preto)
+        - Titulo: ”diálogo, trabalho, coragem”
+        - Texto: 'faça parte! Assine o manifesto:'
+
+    - Formulario de propostas
+        - ⁠título grande: deixe sua proposta
+        - formulário para deixar proposta 
