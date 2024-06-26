@@ -1,12 +1,6 @@
-Alterações:
-
-Newsletter
-    - Neste componente foram adicionadas 'mascaras' nos campos
-    - As mascaras vão evitar que caracteres inadequados sejam inseridos nos campos
-    - Exemplo: No campo de 'telefone' ser inseridos letras
-        - Também evita que esses caracteres inadequados sejam visíveis nos campos no navegador
-
-Form 
-    - Atribuida a lógica de 'variável de estado' em todos os campos do componente (com foco no evento)
-    - Neste componente, foram tratados erros no campo 'select'
+Bibliotecas:
+    - Importação da biblioteca 'react-input-mask'
+    - Biblioteca para criar mascaras para os inputs
+    - Utilizada no input de telefone do componente Newsletter
+    - Input de 'nome' continua feito com JS puro.
     
