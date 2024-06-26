@@ -1,7 +1,24 @@
 import styles from '@/pages/components/Form/Form.module.css';
+import { useState } from 'react';
 import Button from '../Button/Button';
 
 function Proposta(){
+    const [title, setTitle] = useState('');
+    const [text, setText] = useState('');
+    const [theme, setTheme] = useState('');
+
+    const handleTitleChange = (event) => {
+        setTitle(event.target.value)
+    }
+
+    const handleTextChange = (event) => {
+        setText(event.target.value)
+    }
+
+    const handleThemeChange = (event) => {
+        setTheme(event.target.value)
+    }
+
     return(
         <fieldset className={styles.group}>
 
@@ -13,57 +30,45 @@ function Proposta(){
             
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-titulo">Titulo</label>
-                <input name='title' id='id-titulo' type="text" placeholder="Digite o titulo da sua proposta" required/>
+                <input 
+                    name='title' 
+                    id='id-titulo' 
+                    type="text" 
+                    value={title}
+                    placeholder="Digite o titulo da sua proposta" 
+                    required
+                    onChange={handleTitleChange}
+                />
             </div>
 
             <div className={styles.option}>
-            <label className={styles.label} htmlFor="id-tema">Tema</label>
-                <select name="themes" id="id-tema" required>
-                    <option selected value="">Escolha o tema aqui --</option>
-                    <option value="instituto">Instituto Federal na ZN</option>
-                    <option value="instituto">Reforma Trabalhista</option>
-                    <option value="instituto">Juventude Santista</option>
-                </select>
-            </div>
-
-            <div className={styles.option}>
-                <label className={styles.label} htmlFor="id-proposta">Proposta</label>
-                <textarea className={styles.textArea} name="proposta" id="id-proposta" placeholder="Digite aqui a sua ideia para o plano de governo" required></textarea>
-            </div>
-
-        </fieldset>
-    )
-}
-
-function Data(){
-    return(
-        <fieldset className={styles.group}>
-
-            <legend className={styles.legend}>Dados pessoais</legend>
-
-            <div className={styles.option}>
-                <label className={styles.label} htmlFor="id-name">Nome</label>
-                <input name='name' id='id-name' type="text" placeholder="Digite seu nome completo aqui" required/>
-            </div>
-
-            <div className={styles.option}>
-                <label className={styles.label} htmlFor="id-email">E-mail</label>
-                <input name='email' id='id-email' type="email" placeholder="exemplo@exemplo.com" required/>
-            </div>
-
-            <div className={styles.subGroup}>
-                
-                <div className={styles.option}>
-                    <label className={styles.label} htmlFor="id-tel">Telefone</label>
-                    <input name='phone' id='id-tel' type="tel"placeholder="(xx)xxxxx-xxxx" required/>
-                </div>
-                
-                <div className={styles.option}>
-                    <label className={styles.label} htmlFor="id-cep">CEP</label>
-                    <input name='cep' id='id-cep' type="tel"placeholder="000000-000" />
+                <label className={styles.label} htmlFor="id-tema">Tema</label>
+                    <select 
+                        name="themes" 
+                        id="id-tema" 
+                        value={theme} // Defina o valor do select como o estado 'theme'
+                        onChange={handleThemeChange} // Adicione um onChange para atualizar 'theme'
+                        required
+                    >
+                        <option value="defaultValue">Escolha o tema aqui --</option>
+                        <option value="instituto">Instituto Federal na ZN</option>
+                        <option value="instituto">Reforma Trabalhista</option>
+                        <option value="instituto">Juventude Santista</option>
+                    </select>
                 </div>
 
-            </div>
+                <div className={styles.option}>
+                    <label className={styles.label} htmlFor="id-proposta">Proposta</label>
+                    <textarea 
+                        className={styles.textArea} 
+                        name="proposta" id="id-proposta" 
+                        placeholder="Digite aqui a sua ideia para o plano de governo" 
+                        value={text}
+                        required
+                        onChange={handleTextChange}
+                    >
+                    </textarea>
+                </div>
 
         </fieldset>
     )
@@ -74,8 +79,6 @@ export default function Form(){
         <section className={`${styles.containerForm} limit`}>
 
             <form className={styles.form} action="" method="post">
-
-                {/* <Data /> */}
                 
                 <Proposta />
 

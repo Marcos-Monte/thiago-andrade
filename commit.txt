@@ -1,18 +1,12 @@
-Alterações feitas:
+Alterações:
 
-Erro da propriedade fetchpriority
-    - Atualizados react e next para a versão mais recente
-    - Erro parou
+Newsletter
+    - Neste componente foram adicionadas 'mascaras' nos campos
+    - As mascaras vão evitar que caracteres inadequados sejam inseridos nos campos
+    - Exemplo: No campo de 'telefone' ser inseridos letras
+        - Também evita que esses caracteres inadequados sejam visíveis nos campos no navegador
 
-Logotipos
-    - Importados dois logos novos (Não usados na aplicação)
-    - Um branco (Exemplo) e um Preto
-    - Componente independente dos outros
-        - Recebe a imagem direto no componente pai, via props.
-
-Midias
-    - Box de Mídias ajustado
-    - Links abrem novas abas no navegador (target='_blank')
-
-Banner
-    - Logotipo ocultado 
+Form 
+    - Atribuida a lógica de 'variável de estado' em todos os campos do componente (com foco no evento)
+    - Neste componente, foram tratados erros no campo 'select'
+    

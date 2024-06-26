@@ -40,7 +40,7 @@
 }
 
 .link:focus, .link:hover{
-    color:var(--prom);
+    color:var(--secondary);
 }
 
 @media screen and (max-width: 480px){
