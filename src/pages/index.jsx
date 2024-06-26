@@ -4,7 +4,6 @@ import Head from "next/head";
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
 import BannerPrimary from "./components/Banner/Banner";
-// import Imagem from '/public/umasosantos2.png';
 
 export default function Home() {
 
@@ -20,7 +19,6 @@ export default function Home() {
         <Header />
         <main className={styles.main}>
           <BannerPrimary 
-            // banner={Imagem}
             title='”diálogo, trabalho, coragem”'
             text='Conheça mais sobre'
           />   

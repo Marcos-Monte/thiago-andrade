@@ -5,7 +5,6 @@ import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
 import { BannerSecondary } from "./components/Banner/Banner";
 import Form from "./components/Form/Form";
-// import Imagem from '/public/umasosantos2.png';
 
 export default function manifesto() {
 
@@ -21,7 +20,6 @@ export default function manifesto() {
             <Header />
             <main className={styles.main}>
                 <BannerSecondary 
-                    // banner={Imagem}
                     title={title}
                     text='Faça parte! Assine o manifesto:'
                 />

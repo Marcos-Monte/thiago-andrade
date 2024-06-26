@@ -1,6 +1,7 @@
 
 import styles from './Footer.module.css';
 
+import Logo from '../../../../public/logoWhite.png';
 import Logotype from '../Logotype/Logotype';
 import Midias from '../Midias/Midias';
 import FormNewsletter from '../Newsletter/Newsletter.jsx';
@@ -17,7 +18,7 @@ export default function Footer(){
                     <i className={`bi bi-arrow-up-circle ${styles.toTheTop}`}></i>
                 </Link> */}
                 
-                    <Logotype style={styles.image} />
+                    <Logotype style={styles.image} logo={Logo}/>
 
                     <Midias style={styles.boxMidias} />
 

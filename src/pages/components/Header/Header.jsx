@@ -1,20 +1,12 @@
 import Link from 'next/link';
-import { useState } from 'react';
 
 import styles from './Header.module.css';
 
 import Logotype from '@/pages/components/Logotype/Logotype.jsx';
+import Logo from '../../../../public/logoWhite.png';
 
 
 export default function Header(){
-
-    const visivel = '';
-    const invisivel = 'menuHidden'
-    const [visible, setVisible] = useState(false);
-
-    function handleVisible(){
-        setVisible(!visible)
-    }
 
     return(
         <header className={styles.header}>
@@ -23,15 +15,12 @@ export default function Header(){
                 
                 <Logotype 
                         style={styles.image}
+                        logo={Logo}
                 />
                 <nav className={`${styles.navigation} limit`}>
                     <Link className={styles.link}href={'/'}>Inicio</Link>
                     <Link className={styles.link}href={'/manifesto'}>Manifesto</Link>
                 </nav>
-
-                {/* <Menu 
-                    funcao={handleVisible}
-                />  */}
 
             </div>
 

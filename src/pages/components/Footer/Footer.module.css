@@ -24,14 +24,7 @@
     gap: 1rem
 }
 
-.boxMidias{
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    text-decoration: none;
-}
+
 
 .assignature{
     display: flex;
@@ -46,14 +39,6 @@
 
 
 /* Elements */
-.boxMidias>a{
-    padding: .5rem;
-    background-color: var(--primary);
-    color: var(--primary-lightiest);
-    border-radius: 1rem;
-    text-decoration: none;
-}
-
 .image{
     max-width: 165px;
     height: auto;
@@ -66,36 +51,8 @@
     font-weight: 500;
 }
 
-.toTheTop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 170px;
-    right: 50px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
-    font-size: 50px;
-    color: var(--secondary-lightiest);
-    background-color: var(--secondary);
-    transition: transform 8s ease;
-}
-
 
 /* Hover */
-.boxMidias>a:hover{
-    background-color: var(--secondary);
-    color: var(--secondary-lightiest)
-}
-
-.toTheTop:hover{
-    bottom: 190px;
-    transition: transform 8s ease;
-    color: var(--secondary);
-    background-color: var(--secondary-lightiest);
-}
-
 .assignature>a:hover{
     color: var(--secondary);
     text-decoration: underline;
@@ -107,11 +64,5 @@
         flex-direction: column;
         gap: 2rem;
     }
-    /* .toTheTop{
-        bottom: 320px
-    }
-    .toTheTop:hover{
-        bottom: 340px
-    } */
 
 }

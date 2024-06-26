@@ -1,4 +1,5 @@
 .primary, .secondary{
+    margin-top: 90px;
     width: 100%;
     position: relative; /* Necessário para posicionamento absoluto */
     display: flex;
@@ -13,7 +14,7 @@
     background: url('../../../../public/umasosantos1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 100dvh;
     object-fit: cover;
 }
 
@@ -21,7 +22,7 @@
     background: url('../../../../public/umasosantos2.png') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 700px;
 }
 
 .banner{
@@ -74,4 +75,10 @@
     font-size: 50px;;
     font-weight: 500;
     font-style: italic;
+}
+
+
+/* Esconder */
+.image{
+    display: none
 }

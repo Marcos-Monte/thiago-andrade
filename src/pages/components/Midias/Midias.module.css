@@ -1,0 +1,26 @@
+.boxMidias{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.links{
+    padding: .4rem;
+    background-color: var(--primary);
+    color: var(--primary-lightiest);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.links>i{
+    font-size: 20px;
+}
+
+/* Hover */
+.links:hover{
+    background-color: var(--secondary);
+    color: var(--secondary-lightiest)
+}
