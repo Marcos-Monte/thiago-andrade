@@ -5,7 +5,7 @@ export default function Button(props){
     const style = props.style
 
     return(
-        <button className={`${styles.button} ${styles[style]}`}>
+        <button className={`${styles.button} ${styles[style]}`} type='submit'>
             <p>{props.text}</p>
         </button>
     )

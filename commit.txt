@@ -1,6 +1,9 @@
-Bibliotecas:
-    - Importação da biblioteca 'react-input-mask'
-    - Biblioteca para criar mascaras para os inputs
-    - Utilizada no input de telefone do componente Newsletter
-    - Input de 'nome' continua feito com JS puro.
-    
+Formulários:
+    - Adicionado endpoint da Web API Sheetdb
+    - Web API armazena os dados enviados por um formulário em uma planilha do Google Sheets
+    - Os dois formularios 'Newsletter' e 'Proposta' estão com enpoints distintos, declarados na pasta 'API' da própria aplicação;
+
+Submit:
+    - Criada função para submeter os dados do formulário
+    - Após os dados, de ambos os formularios, serem enviados. A aplicação vai abrir um popup dizendo se os dados foram salvos ou não.
+    - Função adicionada na propriedade 'onSubmit' no 'Form'

@@ -1,7 +1,10 @@
+import handleSubmit from '@/pages/api/submitForm';
 import Button from '@/pages/components/Button/Button.jsx';
 import styles from '@/pages/components/Newsletter/Newsletter.module.css';
 import { useState } from 'react';
 import ReactInputMask from 'react-input-mask';
+
+import { endpointNewsletter } from '@/pages/api/submitForm';
 
 export default function FormNewsletter(){
 
@@ -11,7 +14,7 @@ export default function FormNewsletter(){
     
     const handleNomeChange = (e) => {
         const value = e.target.value;
-        console.log("Input Value: ", value); // Verificar o valor do input
+        // console.log("Input Value: ", value); // Verificar o valor do input
         const filteredValue = value.replace(/[^a-zA-Z\s]/g, ''); // Remove caracteres não permitidos
         setName(filteredValue);
         // console.log("Nome State: ", name); // Verificar o estado
@@ -20,10 +23,10 @@ export default function FormNewsletter(){
     const handleBairroChange = (event) => {
         setBairro(event.target.value)
     }
-
+    
     return(
 
-        <form className={styles.formNewsletter} action='' method='post' name='formularioNewsletter'>
+        <form className={styles.formNewsletter} action={endpointNewsletter} method='post' id='formularioNewsletter' onSubmit={handleSubmit}>
 
             <legend className={styles.title}>Boletim Informativo</legend>
 
@@ -32,7 +35,7 @@ export default function FormNewsletter(){
                     <input 
                         className={styles.input} 
                         type="text" 
-                        name="name" 
+                        name="data[name]" 
                         id='id-name' 
                         value={name}
                         placeholder='Nome Completo'
@@ -47,7 +50,7 @@ export default function FormNewsletter(){
 
                     <select 
                         className={`${styles.input}`}
-                        name="bairro" 
+                        name="data[bairro]" 
                         id="id-bairro"
                         value={bairro}
                         onChange={handleBairroChange}
@@ -118,7 +121,7 @@ export default function FormNewsletter(){
                                 {...inputProps} 
                                 className={styles.input} 
                                 type="tel" 
-                                name='whats' 
+                                name='data[whats]' 
                                 id='id-whats' 
                                 placeholder='(XX) XXXXX-XXXX' 
                         />}

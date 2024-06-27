@@ -2,6 +2,9 @@ import styles from '@/pages/components/Form/Form.module.css';
 import { useState } from 'react';
 import Button from '../Button/Button';
 
+import handleSubmit from '@/pages/api/submitForm';
+import { endpointProposta } from '@/pages/api/submitForm.js';
+
 function Proposta(){
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');
@@ -31,7 +34,7 @@ function Proposta(){
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-titulo">Titulo</label>
                 <input 
-                    name='title' 
+                    name='data[title]' 
                     id='id-titulo' 
                     type="text" 
                     value={title}
@@ -44,7 +47,7 @@ function Proposta(){
             <div className={styles.option}>
                 <label className={styles.label} htmlFor="id-tema">Tema</label>
                     <select 
-                        name="themes" 
+                        name="data[themes]" 
                         id="id-tema" 
                         value={theme} // Defina o valor do select como o estado 'theme'
                         onChange={handleThemeChange} // Adicione um onChange para atualizar 'theme'
@@ -61,7 +64,8 @@ function Proposta(){
                     <label className={styles.label} htmlFor="id-proposta">Proposta</label>
                     <textarea 
                         className={styles.textArea} 
-                        name="proposta" id="id-proposta" 
+                        name="data[proposta]" 
+                        id="id-proposta" 
                         placeholder="Digite aqui a sua ideia para o plano de governo" 
                         value={text}
                         required
@@ -78,7 +82,7 @@ export default function Form(){
     return(
         <section className={`${styles.containerForm} limit`}>
 
-            <form className={styles.form} action="" method="post">
+            <form className={styles.form} action={endpointProposta} method="post" onSubmit={handleSubmit}>
                 
                 <Proposta />
 
