@@ -1,15 +1,12 @@
-Responsividade:
-    - Ajustando conteúdo textual do componente Banner
-    - Na resolução abaixo de 660px, o tamanho da fonte diminui proporcionalmente
+Erro 'findDOMMode':
+    - No navegador estava gerando este erro dizendo que essa aplicação está obsoleta e que logo será desabilitada
+    - Estava sendo gerado pela biblioteca 'react-input-mask'
+    - Desabilitei o componente de mascara 'ReactInpukMask' e fiz a mascara na mão
+    - desinslatada a biblioteca da aplicação
 
-Erro indicado no Navegador
-    - Erro gerado por 'assincronissidade' do componente 'submitForm'
-    - Resolvido lidando com 'variavel' data que nunca foi usada.
+Componente input
+    - Excluído componente e repositório
 
-Estilização do PopUp (Alert)
-		- Popup que indica se os dados foram armazenados com sucesso ou não.
-		- Foi utilizada uma biblioteca react chamada - react-toastify -
-		- Estilização feita de acordo com o ChatGPT
-
-Formulários:
-    - Todos os campos são obrigatórios
+Estilização
+    - Estilizado o texto do componente 'Form'
+    - Em resolução abaixo de 660px

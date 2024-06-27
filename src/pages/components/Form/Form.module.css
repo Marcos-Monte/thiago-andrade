@@ -80,3 +80,11 @@
 .option>input:hover, .option>select:hover, .select>option:hover, .textArea:hover, .subGroup>input:hover{
     background-color: var(--hover);
 }
+
+
+@media screen and (max-width: 660px){
+    .content{
+        width: 90%;
+    }
+    
+}

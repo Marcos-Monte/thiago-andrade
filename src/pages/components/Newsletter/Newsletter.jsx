@@ -2,7 +2,6 @@ import handleSubmit from '@/pages/api/submitForm';
 import Button from '@/pages/components/Button/Button.jsx';
 import styles from '@/pages/components/Newsletter/Newsletter.module.css';
 import { useState } from 'react';
-import ReactInputMask from 'react-input-mask';
 
 import { endpointNewsletter } from '@/pages/api/submitForm';
 
@@ -23,7 +22,20 @@ export default function FormNewsletter(){
     const handleBairroChange = (event) => {
         setBairro(event.target.value)
     }
-    
+
+    const handleWhatsChange = (e) => {
+        const value = e.target.value;
+        // Remover todos os caracteres não numéricos
+        const onlyNums = value.replace(/[^\d]/g, '');
+
+        // Aplicar a máscara se tiver até 11 dígitos
+        if (onlyNums.length <= 11) {
+            const formattedValue = onlyNums.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+            setWhats(formattedValue);
+        }
+        // Se tiver mais de 11 dígitos, não atualiza o estado (ignora entrada adicional)
+    };
+
     return(
 
         <form className={styles.formNewsletter} action={endpointNewsletter} method='post' id='formularioNewsletter' onSubmit={handleSubmit}>
@@ -103,32 +115,18 @@ export default function FormNewsletter(){
                 </div>
 
                 <div className={styles.info}>
-                    <label 
-                        className={styles.label} 
-                        htmlFor="id-whats"
-                    >
-                            Whatsapp
-
-                    </label>
-                    <ReactInputMask 
-                        mask="(99) 99999-9999" 
-                        maskChar={null} 
-                        value={whats} 
-                        onChange={(e) => setWhats(e.target.value)}
-                    >
-                        
-                        {(inputProps) => 
-                            <input 
-                                {...inputProps} 
-                                className={styles.input} 
-                                type="tel" 
-                                name='data[whats]' 
-                                id='id-whats' 
-                                placeholder='(XX) XXXXX-XXXX' 
-                                required
-                        />}
-                        
-                    </ReactInputMask>
+                    <label className={styles.label} htmlFor="id-whats">Whatsapp</label>
+                    
+                    <input
+                        type="tel"
+                        id="whats"
+                        name="whats"
+                        value={whats}
+                        onChange={handleWhatsChange}
+                        maxLength="15"
+                        placeholder="(XX) XXXXX-XXXX"
+                        required
+                    />
                 </div>
 
                 <Button style="assign" text='Assine Já!'/>
