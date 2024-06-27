@@ -36,9 +36,16 @@ export default function FormNewsletter(){
         // Se tiver mais de 11 dígitos, não atualiza o estado (ignora entrada adicional)
     };
 
+    const handleFormSubmit = async (event) => {
+        await handleSubmit(event); // Chama a função handleSubmit
+        setBairro(''); // Limpa o estado
+        setName(''); // Limpa o estado
+        setWhats(''); // Limpa o estado
+    };
+
     return(
 
-        <form className={styles.formNewsletter} action={endpointNewsletter} method='post' id='formularioNewsletter' onSubmit={handleSubmit}>
+        <form className={styles.formNewsletter} action={endpointNewsletter} method='post' id='formularioNewsletter' onSubmit={handleFormSubmit}>
 
             <legend className={styles.title}>Boletim Informativo</legend>
 
@@ -69,7 +76,7 @@ export default function FormNewsletter(){
                         onChange={handleBairroChange}
                         required
                     >
-                        <option value="defaultValue">Qual o seu bairro --</option>
+                        <option >Qual o seu bairro --</option>
                         <option value="Saboó">Saboó</option>
                         <option value="Caneleira">Caneleira</option>
                         <option value="Marapé">Marapé</option>
@@ -118,6 +125,7 @@ export default function FormNewsletter(){
                     <label className={styles.label} htmlFor="id-whats">Whatsapp</label>
                     
                     <input
+                        className={`${styles.input}`}
                         type="tel"
                         id="whats"
                         name="whats"

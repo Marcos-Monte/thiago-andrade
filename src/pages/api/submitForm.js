@@ -28,6 +28,7 @@ export default async function  handleSubmit  (event) {
         await response.json();
         // Exibe um alerta informando que os dados foram enviados com sucesso
         notifySuccess('Dados enviados com sucesso!');
+        form.reset(); // Limpa o formulário após o envio bem-sucedido
     } else {
         // Se a resposta não for bem-sucedida, lança um erro
         throw new Error('Erro ao enviar dados');
@@ -36,6 +37,7 @@ export default async function  handleSubmit  (event) {
       // Captura qualquer erro ocorrido durante a requisição e exibe um alerta com a mensagem de erro
         notifyError(`Erro: ${error.message}`);
     }
+    form.reset(); // Limpa o formulário após o envio bem-sucedido
 };
 
  // Função para mostrar o alert

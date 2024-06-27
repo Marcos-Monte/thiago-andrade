@@ -1,3 +1,4 @@
+/* Button Default */
 .button{
     background-color: transparent;
     background-image: linear-gradient(160deg, var(--secondary-lightiest) 31%, var(--secondary) 95%);
@@ -11,11 +12,6 @@
     
 }
 
-.button:hover{
-    background-image: linear-gradient(160deg, var(--secondary) 31%, var(--secondary-lightiest) 95%);
-    color: var(--light-font);
-}
-
 /* Button Form */
 .buttonForm{
     width: 200px !important;
@@ -26,6 +22,12 @@
 /* Button Newsletter */
 .assign{
     padding: .4rem
+}
+
+/* Hover */
+.button:hover{
+    background-image: linear-gradient(160deg, var(--secondary) 31%, var(--secondary-lightiest) 95%);
+    color: var(--light-font);
 }
 
 

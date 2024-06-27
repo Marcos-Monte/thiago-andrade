@@ -28,6 +28,11 @@
     padding: .2rem;
 }
 
+/* Hover */
+.input:hover{
+    background-color: var(--hover);
+}
+
 
 /* Resolução abaixo de 650px */
 @media screen and (max-width: 650px){

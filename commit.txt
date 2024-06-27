@@ -1,12 +1,7 @@
-Erro 'findDOMMode':
-    - No navegador estava gerando este erro dizendo que essa aplicação está obsoleta e que logo será desabilitada
-    - Estava sendo gerado pela biblioteca 'react-input-mask'
-    - Desabilitei o componente de mascara 'ReactInpukMask' e fiz a mascara na mão
-    - desinslatada a biblioteca da aplicação
+Apagar os dados do formulário após o envio:
+    - Criada função que acopla as funções
+        - handleSubmit -> Envia os dados do formulario para a Web aplicação
+        - handleStateChange -> Limpa os dados do formulário
 
-Componente input
-    - Excluído componente e repositório
-
-Estilização
-    - Estilizado o texto do componente 'Form'
-    - Em resolução abaixo de 660px
+Estilização:
+    - Sombreamento enquanto o mouse passa por cima dos campos do formulario (Newsletter e Proposta)
