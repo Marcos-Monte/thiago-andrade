@@ -1,7 +1,2 @@
-Apagar os dados do formulário após o envio:
-    - Criada função que acopla as funções
-        - handleSubmit -> Envia os dados do formulario para a Web aplicação
-        - handleStateChange -> Limpa os dados do formulário
-
-Estilização:
-    - Sombreamento enquanto o mouse passa por cima dos campos do formulario (Newsletter e Proposta)
+formulario 'proposta':
+    - Atribuida a logica de limpar dados após a sumibmissão do Formulário
