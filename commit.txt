@@ -1,9 +1,15 @@
-Formulários:
-    - Adicionado endpoint da Web API Sheetdb
-    - Web API armazena os dados enviados por um formulário em uma planilha do Google Sheets
-    - Os dois formularios 'Newsletter' e 'Proposta' estão com enpoints distintos, declarados na pasta 'API' da própria aplicação;
+Responsividade:
+    - Ajustando conteúdo textual do componente Banner
+    - Na resolução abaixo de 660px, o tamanho da fonte diminui proporcionalmente
 
-Submit:
-    - Criada função para submeter os dados do formulário
-    - Após os dados, de ambos os formularios, serem enviados. A aplicação vai abrir um popup dizendo se os dados foram salvos ou não.
-    - Função adicionada na propriedade 'onSubmit' no 'Form'
+Erro indicado no Navegador
+    - Erro gerado por 'assincronissidade' do componente 'submitForm'
+    - Resolvido lidando com 'variavel' data que nunca foi usada.
+
+Estilização do PopUp (Alert)
+		- Popup que indica se os dados foram armazenados com sucesso ou não.
+		- Foi utilizada uma biblioteca react chamada - react-toastify -
+		- Estilização feita de acordo com o ChatGPT
+
+Formulários:
+    - Todos os campos são obrigatórios

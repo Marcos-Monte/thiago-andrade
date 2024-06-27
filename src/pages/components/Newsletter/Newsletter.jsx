@@ -40,6 +40,7 @@ export default function FormNewsletter(){
                         value={name}
                         placeholder='Nome Completo'
                         onChange={handleNomeChange}
+                        required
                     />
 
                 </div>
@@ -124,6 +125,7 @@ export default function FormNewsletter(){
                                 name='data[whats]' 
                                 id='id-whats' 
                                 placeholder='(XX) XXXXX-XXXX' 
+                                required
                         />}
                         
                     </ReactInputMask>

@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 const endpointNewsletter = 'https://sheetdb.io/api/v1/uzbrbp2x2u6xx';
 const endpointProposta =  'https://sheetdb.io/api/v1/jmvzo70pomsq6';
 
@@ -23,18 +25,43 @@ export default async function  handleSubmit  (event) {
       // Verifica se a resposta da requisição é bem-sucedida (status code 200-299)
     if (response.ok) {
         // Se a resposta for bem-sucedida, converte o resultado para JSON
-        const data = await response.json();
+        await response.json();
         // Exibe um alerta informando que os dados foram enviados com sucesso
-        alert('Dados enviados com sucesso!');
+        notifySuccess('Dados enviados com sucesso!');
     } else {
         // Se a resposta não for bem-sucedida, lança um erro
         throw new Error('Erro ao enviar dados');
     }
     } catch (error) {
       // Captura qualquer erro ocorrido durante a requisição e exibe um alerta com a mensagem de erro
-        alert('Erro: ' + error.message);
+        notifyError(`Erro: ${error.message}`);
     }
 };
+
+ // Função para mostrar o alert
+  const notifySuccess = (message) => {
+    toast.success(message, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
+  const notifyError = (message) => {
+    toast.error(message, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
 export { endpointNewsletter, endpointProposta, handleSubmit };
 

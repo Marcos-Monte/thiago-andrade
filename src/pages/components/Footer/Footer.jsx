@@ -13,11 +13,7 @@ export default function Footer(){
             <div className={`${styles.container} limit`}>
 
                 <div className={styles.containerLinks}>
-
-                {/* <Link href="">
-                    <i className={`bi bi-arrow-up-circle ${styles.toTheTop}`}></i>
-                </Link> */}
-                
+                    
                     <Logotype style={styles.image} logo={Logo}/>
 
                     <Midias style={styles.boxMidias} />
