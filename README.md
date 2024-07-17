@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Página Institucional do Pré-Candidato a Vereador 🌟</h1>
+<h1 align="center" style="font-weight: bold;">Página Institucional do Pré-Candidato a Vereador</h1>
 
 <p align="center">
  <!-- <a href="#layout">Layout</a> • -->
