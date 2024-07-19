@@ -128,7 +128,7 @@ export default function FormNewsletter(){
                         className={`${styles.input}`}
                         type="tel"
                         id="whats"
-                        name="whats"
+                        name="data[whats]"
                         value={whats}
                         onChange={handleWhatsChange}
                         maxLength="15"

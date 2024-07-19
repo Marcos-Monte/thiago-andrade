@@ -1,2 +1,3 @@
-formulario 'proposta':
-    - Atribuida a logica de limpar dados após a sumibmissão do Formulário
+fix: Dado de telefone não estava sendo indicado. Precisei reatribuir a propriedade: name="data[whats]"
+
+fix : Quando clicar no link do Footer irá abrir o portifólio e não o LinkedIn
