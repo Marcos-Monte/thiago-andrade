@@ -47,7 +47,7 @@ export default function FormNewsletter(){
 
         <form className={styles.formNewsletter} action={endpointNewsletter} method='post' id='formularioNewsletter' onSubmit={handleFormSubmit}>
 
-            <legend className={styles.title}>Boletim Informativo</legend>
+            <legend className={styles.title}>Receba Novidades</legend>
 
                 <div className={styles.info}>
                     <label className={styles.label} htmlFor="id-name">Nome </label>

@@ -1,7 +1,7 @@
 /* Containers */
 .footer{
     width: 100%;
-    background-color: var(--primary-lightiest);
+    background-color: var(--secondary);
     color: var(--light-font);
 }
 
@@ -21,18 +21,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
 }
-
-
 
 .assignature{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: .5rem;
-}
-
-.assignature{
+    gap: .8rem;
     padding: 2rem 0;
     border-top: .1rem solid var(--primary);
 }
@@ -45,7 +42,8 @@
 }
 
 
-.assignature>a{
+.linkDev{
+    margin-left: .3rem;
     text-decoration: none;
     color: var(--light-font);
     font-style: italic;
@@ -54,8 +52,8 @@
 
 
 /* Hover */
-.assignature>a:hover{
-    color: var(--secondary);
+.linkDev:hover{
+    color: var(--primary);
     text-decoration: underline;
 }
 

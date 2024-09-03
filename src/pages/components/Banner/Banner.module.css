@@ -1,49 +1,18 @@
 .primary, .secondary{
-    margin-top: 90px;
+    margin-top: 75px;
     width: 100%;
-    position: relative; /* Necessário para posicionamento absoluto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Para garantir que a imagem e o filtro não saiam do contêiner */
-    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    height: 50dvh;
     min-width: 350px;
 }
 
 .primary{
-    background: url('../../../../public/umasosantos1.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100dvh;
-    object-fit: cover;
+    background: url('../../../../public/thiago-site-rosa.png') no-repeat;
 }
 
 .secondary{
-    background: url('../../../../public/umasosantos2.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 700px;
-}
-
-.banner{
-    width: 100%;
-    height: 100%;
-    position: absolute; /* Para que a imagem ocupe todo o contêiner */
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.secondary::after, .primary::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .8;
-    background-color: var(--shadow);
-    z-index: 0;
+    background: url('../../../../public/thiago-site-amarelo.png') no-repeat;
 }
 
 .image{
@@ -56,38 +25,8 @@
     top: 0;
 }
 
-.primaryContent, .secondaryContent{
-    position: absolute;
-    z-index: 1; /* Para garantir que o título esteja acima da imagem e do filtro */
-    text-align: center;
-}
-
-.secondaryTitle, .primaryTitle{
-    text-transform: capitalize;
-    color: var(--secondary-lightiest); /* Cor do texto */
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.text{
-    color: var(--secondary-lightiest);
-    font-size: 3rem;;
-    font-weight: 500;
-    font-style: italic;
-}
-
 
 /* Esconder */
 .image{
     display: none
-}
-
-@media screen and (max-width: 660px){
-    .secondaryTitle, .primaryTitle{
-        font-size: 2rem;
-    }
-    .text{
-        font-size: 1.5rem;
-    }
 }

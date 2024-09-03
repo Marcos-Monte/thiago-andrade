@@ -1,8 +1,1 @@
-Atualizações solicitadas por Angela em 03/09/24
-
-style: atualização das fontes para as indicadas: 
-    - Primaria: #362971 --> igual
-    - Primaria Light: #1fb5b4 --> #3AC1E0; 
-    - Secundaria: #e5325a --> #FB376F;
-    - Secundaria Light: #eec013 --> #F7CF59;
-
+fix: alteração na estilização da pagina. Mudança das imagens e logitipos. Todos enviados e indicados por Angela

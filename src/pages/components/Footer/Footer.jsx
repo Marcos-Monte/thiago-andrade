@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 
-import Logo from "../../../../public/logoWhite.png";
+import Logo from "../../../../public/Thiago Andrade - vertical - branco.png";
 import Logotype from "../Logotype/Logotype";
 import Midias from "../Midias/Midias";
 import FormNewsletter from "../Newsletter/Newsletter.jsx";
@@ -18,10 +18,16 @@ export default function Footer() {
         <FormNewsletter style={styles.formNewsletter} />
       </div>
 
-      <p className={`${styles.assignature} limit`}>
-        Desenvolvido por
-        <a href="https://portifolio-jet-eight-67.vercel.app/">@Marcos Monte</a>
-      </p>
+      <div className={`${styles.assignature} limit`}>
+        
+        <p>ELEICAO 2024 THIAGO SOUZA DE ANDRADE VEREADOR | CNPJ 56.405.311/0001-95</p>
+
+        <p> Desenvolvido por
+          <a className={styles.linkDev} href="https://portifolio-jet-eight-67.vercel.app/">@Marcos Monte</a>
+        </p>
+
+      </div>
+
     </footer>
   );
 }

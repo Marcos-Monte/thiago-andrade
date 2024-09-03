@@ -32,7 +32,7 @@
 
 .link{
     text-decoration: none;
-    color: var(--secondary-lightiest);
+    color: var(--light-font);
     font-weight: bold;
     padding: .8rem;
     border-radius: 1rem;

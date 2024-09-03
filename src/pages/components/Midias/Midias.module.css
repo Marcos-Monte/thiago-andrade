@@ -10,7 +10,7 @@
 .links{
     padding: .4rem;
     background-color: var(--primary);
-    color: var(--primary-lightiest);
+    color: var(--light-font);
     border-radius: 1rem;
     text-decoration: none;
 }
@@ -21,6 +21,6 @@
 
 /* Hover */
 .links:hover{
-    background-color: var(--secondary);
-    color: var(--secondary-lightiest)
+    background-color: var(--third);
+    color: var(--primary)
 }
