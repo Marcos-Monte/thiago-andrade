@@ -1,3 +1,8 @@
-fix: Dado de telefone não estava sendo indicado. Precisei reatribuir a propriedade: name="data[whats]"
+Atualizações solicitadas por Angela em 03/09/24
 
-fix : Quando clicar no link do Footer irá abrir o portifólio e não o LinkedIn
+style: atualização das fontes para as indicadas: 
+    - Primaria: #362971 --> igual
+    - Primaria Light: #1fb5b4 --> #3AC1E0; 
+    - Secundaria: #e5325a --> #FB376F;
+    - Secundaria Light: #eec013 --> #F7CF59;
+

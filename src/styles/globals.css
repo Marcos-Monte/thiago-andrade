@@ -28,11 +28,18 @@ html{
   --secondary-lightiest: #F0E319; 
   --prom: #00175b;*/
 
-  /* Global Definitive */
-  --primary: #362971;
+  /* Global Ancient */
+  /* --primary: #362971;
   --primary-lightiest:#1fb5b4;
   --secondary:#e5325a;
-  --secondary-lightiest: #eec013;
+  --secondary-lightiest: #eec013; */
+
+   /* Global Definitive */
+   --primary: #362971; 
+   --primary-lightiest:  #3AC1E0; 
+   --secondary: #FB376F;
+   --secondary-lightiest: #F7CF59;
+  
     
   /* Datails */
   --light-font: #fff;
