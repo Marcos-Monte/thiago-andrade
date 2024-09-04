@@ -12,11 +12,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .image{
-    width: 165px;
+    width: 200px;
     height: auto;
     /* filter: hue-rotate(2000deg) */
 }
@@ -28,18 +28,23 @@
     align-items: center;
     position: relative;
     flex-grow: 2;
+    font-size: 1.5rem;
+    
 }
 
-.link{
+.button{
     text-decoration: none;
+    background-color: transparent;
     color: var(--light-font);
     font-weight: bold;
-    padding: .8rem;
+    margin: .8rem;
     border-radius: 1rem;
+    border: none;
     transition: transform 0.3s ease;
+    font-size: 1.5rem;
 }
 
-.link:focus, .link:hover{
+.button:focus, .button:hover{
     color:var(--secondary);
 }
 

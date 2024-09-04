@@ -1,13 +1,5 @@
-.main{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    /* max-width: 1240px; */
-    height: auto;
-    background-color: var(--third);
-    color: var(--dark-font)
+.container{
+    width: 100%
 }
 
 .conteudo{
@@ -34,11 +26,6 @@
     font-size: 2rem;
 }
 
-/* .texto:last-child{
-    margin-top: 1rem;
-    text-indent: 0;
-} */
-
 .span{
     text-align: center;
     color: var(--primary);
@@ -59,4 +46,3 @@
 .teste{
     font-size: 2rem;
 }
-

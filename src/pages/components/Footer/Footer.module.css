@@ -32,12 +32,13 @@
     gap: .8rem;
     padding: 2rem 0;
     border-top: .1rem solid var(--primary);
+    text-align: center;
 }
 
 
 /* Elements */
 .image{
-    max-width: 165px;
+    max-width: 250px;
     height: auto;
 }
 
