@@ -119,107 +119,114 @@ const handleWhatsChange = (e) => {
             </select>
           </div> */}
 
-          <div className={styles.option}>
-            <label className={styles.label} htmlFor="id-name">Nome </label>
-            <input 
-                className={styles.input} 
-                type="text" 
-                name="data[name]" 
-                id='id-name' 
-                value={name}
-                placeholder='Nome'
-                onChange={handleNomeChange}
-                required
-            />
-
-          </div>
-
-          <div className={styles.option}>
-            <label className={styles.label} htmlFor="id-sobrenome">Sobrenome </label>
-            <input 
-                className={styles.input} 
-                type="text" 
-                name="data[sobrenome]" 
-                id='id-sobrenome' 
-                value={sobrenome}
-                placeholder='Sobrenome'
-                onChange={handleSobrenomeChange}
-                required
-            />
-
-          </div>
-
-          <div className={styles.option}>
-              <label className={styles.label} htmlFor="id-whats">Whatsapp</label>
-              
-              <input
-                  className={`${styles.input}`}
-                  type="tel"
-                  id="whats"
-                  name="data[whats]"
-                  value={whats}
-                  onChange={handleWhatsChange}
-                  maxLength="15"
-                  placeholder="(XX) XXXXX-XXXX"
+          <div className={styles.box}>
+            <div className={styles.option}>
+              <label className={styles.label} htmlFor="id-name">Nome </label>
+              <input 
+                  className={styles.input} 
+                  type="text" 
+                  name="data[name]" 
+                  id='id-name' 
+                  value={name}
+                  placeholder='Nome'
+                  onChange={handleNomeChange}
                   required
               />
+
+            </div>
+
+            <div className={styles.option}>
+              <label className={styles.label} htmlFor="id-sobrenome">Sobrenome </label>
+              <input 
+                  className={styles.input} 
+                  type="text" 
+                  name="data[sobrenome]" 
+                  id='id-sobrenome' 
+                  value={sobrenome}
+                  placeholder='Sobrenome'
+                  onChange={handleSobrenomeChange}
+                  required
+              />
+
+            </div>
+
           </div>
 
-          <div className={styles.option}>
 
-          <label className={styles.label} htmlFor="id-bairro">Bairro </label>
+          <div className={styles.box}>
+            <div className={styles.option}>
+                <label className={styles.label} htmlFor="id-whats">Whatsapp</label>
+                
+                <input
+                    className={`${styles.input}`}
+                    type="tel"
+                    id="whats"
+                    name="data[whats]"
+                    value={whats}
+                    onChange={handleWhatsChange}
+                    maxLength="15"
+                    placeholder="(XX) XXXXX-XXXX"
+                    required
+                />
+            </div>
 
-          <select 
-              className={`${styles.input}`}
-              name="data[bairro]" 
-              id="id-bairro"
-              value={bairro}
-              onChange={handleBairroChange}
-              required
-          >
-              <option value=''>Qual o seu bairro --</option>
-              <option value="Saboó">Saboó</option>
-              <option value="Caneleira">Caneleira</option>
-              <option value="Marapé">Marapé</option>
-              <option value="Nova Cintra">Nova Cintra</option>
-              <option value="Valongo">Valongo</option>
-              <option value="Embaré">Embaré</option>
-              <option value="Aparecida">Aparecida</option>
-              <option value="Areia Branca">Areia Branca</option>
-              <option value="Boqueirão">Boqueirão</option>
-              <option value="Gonzaga">Gonzaga</option>
-              <option value="Ilhéu Alto">Ilhéu Alto</option>
-              <option value="Jabaquara">Jabaquara</option>
-              <option value="São Jorge">São Jorge</option>
-              <option value="Vila Belmiro">Vila Belmiro</option>
-              <option value="Vila Progresso">Vila Progresso</option>
-              <option value="Jose Menino">Jose Menino</option>
-              <option value="Pompéia">Pompéia</option>
-              <option value="Ponta da Praia">Ponta da Praia</option>
-              <option value="Campo Grande">Campo Grande</option>
-              <option value="Centro">Centro</option>
-              <option value="Encruzilhada">Encruzilhada</option>
-              <option value="Estuário">Estuário</option>
-              <option value="Macuco">Macuco</option>
-              <option value="Paquetá">Paquetá</option>
-              <option value="Alemoa">Alemoa</option>
-              <option value="Vila Mathias">Vila Mathias</option>
-              <option value="Vila Nova">Vila Nova</option>
-              <option value="Vila Rica">Vila Rica</option>
-              <option value="Monte Serrat">Monte Serrat</option>
-              <option value="Chivo de Paula">Chivo de Paula</option>
-              <option value="Nova Cintra">Nova Cintra</option>
-              <option value="Pacheco">Pacheco</option>
-              <option value="Penha">Penha</option>
-              <option value="Santa Maria">Santa Maria</option>
-              <option value="Santa Teresinha">Santa Teresinha</option>
-              <option value="São Bento">São Bento</option>
-              <option value="Bom Retiro">Bom Retiro</option>
-              <option value="Jardim Castelo">Jardim Castelo</option>
-              <option value="Piratininga">Piratininga</option>
-              <option value="São Manoel">São Manoel</option>
-          </select>
+            <div className={styles.option}>
 
+            <label className={styles.label} htmlFor="id-bairro">Bairro </label>
+
+            <select 
+                className={`${styles.input}`}
+                name="data[bairro]" 
+                id="id-bairro"
+                value={bairro}
+                onChange={handleBairroChange}
+                required
+            >
+                <option value=''>Qual o seu bairro --</option>
+                <option value="Saboó">Saboó</option>
+                <option value="Caneleira">Caneleira</option>
+                <option value="Marapé">Marapé</option>
+                <option value="Nova Cintra">Nova Cintra</option>
+                <option value="Valongo">Valongo</option>
+                <option value="Embaré">Embaré</option>
+                <option value="Aparecida">Aparecida</option>
+                <option value="Areia Branca">Areia Branca</option>
+                <option value="Boqueirão">Boqueirão</option>
+                <option value="Gonzaga">Gonzaga</option>
+                <option value="Ilhéu Alto">Ilhéu Alto</option>
+                <option value="Jabaquara">Jabaquara</option>
+                <option value="São Jorge">São Jorge</option>
+                <option value="Vila Belmiro">Vila Belmiro</option>
+                <option value="Vila Progresso">Vila Progresso</option>
+                <option value="Jose Menino">Jose Menino</option>
+                <option value="Pompéia">Pompéia</option>
+                <option value="Ponta da Praia">Ponta da Praia</option>
+                <option value="Campo Grande">Campo Grande</option>
+                <option value="Centro">Centro</option>
+                <option value="Encruzilhada">Encruzilhada</option>
+                <option value="Estuário">Estuário</option>
+                <option value="Macuco">Macuco</option>
+                <option value="Paquetá">Paquetá</option>
+                <option value="Alemoa">Alemoa</option>
+                <option value="Vila Mathias">Vila Mathias</option>
+                <option value="Vila Nova">Vila Nova</option>
+                <option value="Vila Rica">Vila Rica</option>
+                <option value="Monte Serrat">Monte Serrat</option>
+                <option value="Chivo de Paula">Chivo de Paula</option>
+                <option value="Nova Cintra">Nova Cintra</option>
+                <option value="Pacheco">Pacheco</option>
+                <option value="Penha">Penha</option>
+                <option value="Santa Maria">Santa Maria</option>
+                <option value="Santa Teresinha">Santa Teresinha</option>
+                <option value="São Bento">São Bento</option>
+                <option value="Bom Retiro">Bom Retiro</option>
+                <option value="Jardim Castelo">Jardim Castelo</option>
+                <option value="Piratininga">Piratininga</option>
+                <option value="São Manoel">São Manoel</option>
+            </select>
+
+            </div>
+          
           </div>
 
           <div className={styles.option}>

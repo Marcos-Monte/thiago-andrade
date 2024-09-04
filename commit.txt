@@ -1,3 +1,1 @@
-feat: campos adicionados no componente 'Form': nome, sobrenome, whats e bairro. Atribuída a cor de fundo indicada pela Angela.
-
-feat: criação do componente 'TextoManifesto' que receberá o texto enviado por Angela via WhatsApp
+style: estilizando o componente 'TextoManifesto'

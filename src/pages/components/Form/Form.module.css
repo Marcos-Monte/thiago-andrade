@@ -5,8 +5,8 @@
 }
 
 .content {
-  text-align: center;
-  width: 70%;
+  text-align: justify;
+
   margin: 1.5rem auto;
   color: var(--light-font);
 }
@@ -80,6 +80,14 @@
 .group > .subGroup > .option {
   width: 225px;
   flex-grow: 1;
+}
+
+/* Box */
+
+.box{
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: .5rem;
 }
 
 /* Hover */
