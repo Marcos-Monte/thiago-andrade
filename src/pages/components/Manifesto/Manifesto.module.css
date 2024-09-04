@@ -16,35 +16,11 @@
     text-align: justify;
 }
 
-.texto{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-indent: 3rem;
+/* Medias */
+
+@media screen and (max-width: 500px){
+    .conteudo{
+        padding: 1rem .3rem;
+    }
 }
 
-.texto:first-child{
-    text-indent: 0;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.span{
-    text-align: center;
-    color: var(--primary);
-    font-size: 2rem;
-    font-family: var(--font-title);
-    font-weight: bold;
-}
-
-.title{
-    padding-bottom: 3rem;
-    text-align: center;
-    color: var(--primary);
-    font-size: 3rem;
-    font-family: var(--font-title);
-    font-weight: bold;
-}
-
-.teste{
-    font-size: 2rem;
-}

@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 
-const endpointNewsletter = 'https://sheetdb.io/api/v1/uzbrbp2x2u6xx';
-const endpointProposta =  'https://sheetdb.io/api/v1/jmvzo70pomsq6';
+const endpointNewsletter = 'https://sheetdb.io/api/v1/8tcs3kndl7ihz';
+const endpointProposta =  'https://sheetdb.io/api/v1/9st3iybb0fson';
 
 export default async function  handleSubmit  (event) {
     // Evita o comportamento padrão do formulário, que é recarregar a página

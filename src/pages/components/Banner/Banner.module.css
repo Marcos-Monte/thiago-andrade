@@ -1,41 +1,31 @@
 .primary, .secondary{
+    width: 100%;
     margin-top: 75px;
     min-width: 350px;
 }
 
-.primary{
+.imagem{
+    width: 100%;
+    height: auto;
+}
+
+/* .primary{
     background: url('../../../../public/thiago-site-rosa.png') no-repeat;
     width: 100%;
     background-position: center;
     background-size: contain;
     background-size: cover;
     height:500px;
-}
+} */
 
-.secondary{
+/* .secondary{
     background: url('../../../../public/thiago-site-amarelo.png') no-repeat;
     width: 100%;
     background-position: center;
     background-size: contain;
     background-size: cover;
     height:500px;
-}
-
-.image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 300px;
-    height: auto;
-    filter: invert();
-    top: 0;
-}
-
-
-/* Esconder */
-.image{
-    display: none
-}
+} */
 
 /* Media */
 
