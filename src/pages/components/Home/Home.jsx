@@ -18,9 +18,11 @@ export default function Home(){
 
                 <p className={styles.texto}>Quero que Santos seja uma cidade de paz, com educação e saúde de qualidade, emprego com salário digno e oportunidades para todas e todos.</p>
 
+                <p className={styles.title}>Vamos juntos construir uma cidade melhor?</p>
+
             </div> 
 
-            <p className={styles.title}>Vamos juntos construir uma cidade melhor?</p>
+            
 
         </section>
     )
