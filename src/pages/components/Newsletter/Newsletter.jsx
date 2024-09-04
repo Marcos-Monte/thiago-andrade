@@ -76,7 +76,7 @@ export default function FormNewsletter(){
                         onChange={handleBairroChange}
                         required
                     >
-                        <option >Qual o seu bairro --</option>
+                        <option value=''>Qual o seu bairro --</option>
                         <option value="Saboó">Saboó</option>
                         <option value="Caneleira">Caneleira</option>
                         <option value="Marapé">Marapé</option>

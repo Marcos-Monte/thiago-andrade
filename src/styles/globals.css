@@ -31,8 +31,6 @@ html{
   width: 100%;
   /* max-width: 1240px; */
   height: auto;
-  background-color: var(--third);
-  color: var(--dark-font)
 }
 
 :root{
