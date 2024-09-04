@@ -6,7 +6,7 @@ import Head from "next/head";
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
 import Home from "./components/Home/Home.jsx";
-import Manifesto from "./components/Manifesto/manifesto";
+import Manifesto from "./components/Manifesto/Manifesto.jsx";
 
 export default function App() {
 

@@ -36,3 +36,14 @@
 .image{
     display: none
 }
+
+/* Media */
+
+@media screen and (max-width:480px ){
+    .primary, .secondary{
+        margin-top: 130px;
+    }
+    /* .secondary{
+        display: none;
+    } */
+}

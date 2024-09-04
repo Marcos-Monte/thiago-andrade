@@ -28,7 +28,7 @@
     align-items: center;
     position: relative;
     flex-grow: 2;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     
 }
 
@@ -51,6 +51,7 @@
 @media screen and (max-width: 480px){
     .container{
         flex-direction: column;
+        padding: 1rem 0;
     }
 
     .navigation{
@@ -58,7 +59,7 @@
         justify-content: space-evenly;
     }
 
-    .image{
+    /* .image{
         width: 200px
-    }
+    } */
 }
