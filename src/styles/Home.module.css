@@ -4,26 +4,59 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    /* max-width: 1240px; */
     height: auto;
     background-color: var(--third);
-    color: var(--light-font)
+    color: var(--dark-font)
 }
 
-.conteudoTeste{
+.conteudo{
     padding: 3rem .5rem;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 1rem; */
     text-align: justify;
 }
 
-.title{
+.texto{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-indent: 3rem;
+}
+
+.texto:first-child{
+    text-indent: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* .texto:last-child{
+    margin-top: 1rem;
+    text-indent: 0;
+} */
+
+.span{
     text-align: center;
     color: var(--primary);
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: bold;
+}
+
+.title{
+    padding-bottom: 3rem;
+    text-align: center;
+    color: var(--primary);
+    font-size: 3rem;
+    font-family: var(--font-title);
+    font-weight: bold;
+}
+
+.teste{
     font-size: 2rem;
 }
 

@@ -1,18 +1,24 @@
 .primary, .secondary{
     margin-top: 75px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    height: 50dvh;
     min-width: 350px;
 }
 
 .primary{
     background: url('../../../../public/thiago-site-rosa.png') no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height:500px;
 }
 
 .secondary{
     background: url('../../../../public/thiago-site-amarelo.png') no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height:500px;
 }
 
 .image{

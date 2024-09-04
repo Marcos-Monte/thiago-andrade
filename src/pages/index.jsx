@@ -12,30 +12,38 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{`${title} | Home`}</title>
         <meta name="description" content="Feed do Candidato a Vereador da cidade de Santos, Thiago Andrade" />      
       </Head>
+
       <div className={`${styles.body}`}>
+
         <Header />
+
         <main className={styles.main}>
-          <BannerPrimary 
-            title='”diálogo, trabalho, coragem”'
-            text='Conheça mais sobre'
-          />   
-          <div className={`${styles.conteudoTeste} limit`}>
-            <h1 className={styles.title}>
+
+          <BannerPrimary />   
+
+          {/* <h1 className={styles.title}>
               {title}
-            </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis numquam rerum delectus quos molestiae debitis eligendi magni voluptatibus, enim, optio hic porro iusto dolorem quisquam similique aperiam nesciunt quibusdam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolorem dolore ex beatae aut natus libero vel fuga, nam eveniet. Sint nesciunt repudiandae provident aut debitis magni possimus nobis harum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga sapiente debitis aut eum iusto eos accusamus alias nesciunt vitae porro itaque sed doloribus, dolorem ullam incidunt perspiciatis ut atque!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis numquam rerum delectus quos molestiae debitis eligendi magni voluptatibus, enim, optio hic porro iusto dolorem quisquam similique aperiam nesciunt quibusdam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolorem dolore ex beatae aut natus libero vel fuga, nam eveniet. Sint nesciunt repudiandae provident aut debitis magni possimus nobis harum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga sapiente debitis aut eum iusto eos accusamus alias nesciunt vitae porro itaque sed doloribus, dolorem ullam incidunt perspiciatis ut atque!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis numquam rerum delectus quos molestiae debitis eligendi magni voluptatibus, enim, optio hic porro iusto dolorem quisquam similique aperiam nesciunt quibusdam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolorem dolore ex beatae aut natus libero vel fuga, nam eveniet. Sint nesciunt repudiandae provident aut debitis magni possimus nobis harum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga sapiente debitis aut eum iusto eos accusamus alias nesciunt vitae porro itaque sed doloribus, dolorem ullam incidunt perspiciatis ut atque!
-            </p>
-          </div>     
+            </h1> */}
+
+          <div className={`${styles.conteudo} limit`}>
+
+            <p className={styles.texto}>Sou <strong className={styles.span}>Thiago Andrade</strong> e quero ser o seu vereador em Santos.</p>
+
+            <p className={styles.texto}>Neste momento decisivo para nossa cidade, apresento minha candidatura com um compromisso: defender a democracia e promover a justiça social. </p>
+            <p className={styles.texto}>Desde muito jovem, batalho para que todos os santistas tenham sua cidadania garantida e respeitada. Acredito que a política é uma ferramenta para fazer a vida mais justa e não para ter benefícios pessoais. </p>
+
+            <p className={styles.texto}>Quero que Santos seja uma cidade de paz, com educação e saúde de qualidade, emprego com salário digno e oportunidades para todas e todos.</p>
+
+          </div> 
+          <p className={styles.title}>Vamos juntos construir uma cidade melhor?</p>
+
         </main>
+
         <Footer />
+
       </div>
     </>
   );

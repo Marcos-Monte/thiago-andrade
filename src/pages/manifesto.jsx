@@ -7,7 +7,7 @@ import { BannerSecondary } from "./components/Banner/Banner";
 import Form from "./components/Form/Form";
 
 export default function manifesto() {
-  const title = "Manifesto";
+  const title = "Thiago Andrade | Manifesto";
 
   return (
     <>
