@@ -22,8 +22,8 @@ export default function Footer() {
         
         <p>ELEICAO 2024 THIAGO SOUZA DE ANDRADE VEREADOR | CNPJ 56.405.311/0001-95</p>
 
-        <p> Desenvolvido por
-          <a className={styles.linkDev} href="https://portifolio-jet-eight-67.vercel.app/">@Marcos Monte</a>
+        <p className={styles.linkDev}> Desenvolvido por
+          <a href="https://portifolio-jet-eight-67.vercel.app/">@Marcos-Monte</a>
         </p>
 
       </div>
