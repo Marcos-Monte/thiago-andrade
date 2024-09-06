@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
 
 import Logotype from '@/pages/components/Logotype/Logotype.jsx';
-import Logo from '../../../../public/Thiago Andrade - horizontal - branco.png';
+import Logo from '../../../../public/assets/Thiago Andrade - horizontal - branco.png';
 
 
 export default function Header(props){

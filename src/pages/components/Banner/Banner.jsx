@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import styles from '@/pages/components/Banner/Banner.module.css';
 
-import BannerAmarelo from '../../../../public/thiago-site-amarelo.png';
-import BannerRosa from '../../../../public/thiago-site-rosa.png';
+import BannerAmarelo from '../../../../public/assets/thiago-site-amarelo.png';
+import BannerRosa from '../../../../public/assets/thiago-site-rosa.png';
 
 export default function BannerPrimary(){
     return(

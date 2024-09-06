@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Página do Candidato a Vereador da Cidade de Santos, Thiago Andrade do PCdoB" />
-        <link rel="icon" href="/mureta.png" />  
+        <link rel="icon" href="./assets/favicon.ico" />  
       </Head>
       <Component {...pageProps} />
       <ToastContainer style={{ zIndex: 9999 }} />
