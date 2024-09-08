@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import Logotype from '@/pages/components/Logotype/Logotype.jsx';
 import Link from 'next/link';
 import Logo from '../../../../public/assets/Thiago Andrade - horizontal - branco.png';
-import Menu from '../Menu/menu';
+import Menu from '../Menu/Menu.jsx';
 
 
 export default function Header(){
