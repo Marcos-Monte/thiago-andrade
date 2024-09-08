@@ -1,6 +1,7 @@
 .container{
     width: 100%;
     font-size: 1.5rem;
+    
 }
 
 .title{
@@ -8,4 +9,12 @@
     color: var(--third);
     margin: .5rem 0;
     text-transform: uppercase;
+}
+
+/* Medias */
+
+@media screen and (max-width: 500px){
+    .container{
+        text-align: left;
+    }
 }
