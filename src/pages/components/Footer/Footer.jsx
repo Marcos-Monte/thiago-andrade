@@ -8,7 +8,9 @@ import FormNewsletter from "../Newsletter/Newsletter.jsx";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+
       <div className={`${styles.container} limit`}>
+        
         <div className={styles.containerLinks}>
           <Logotype style={styles.image} logo={Logo} />
 

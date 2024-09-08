@@ -38,7 +38,7 @@
 
 /* Elements */
 .image{
-    max-width: 250px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -72,14 +72,14 @@
 }
 
 /* Resolução abaixo de 650px */
-@media screen and (max-width:705px){
+@media screen and (max-width:854px){
     .container{
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
     .image{
-        max-width: 350px;
+       width: 100%
     }
 
 }

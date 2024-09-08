@@ -8,18 +8,23 @@ const tiktok = 'https://www.tiktok.com/@thiagoandrade65123';
 export default function Midias(){
     return(
         <nav className={styles.boxMidias}>
+
             <a className={styles.links} target="_blank" href={whatsapp} >
                 <i className="bi bi-whatsapp"></i>
             </a>
+
             <a className={styles.links} target="_blank" href={insta}>
                 <i className="bi bi-instagram"></i>
             </a>
+
             <a className={styles.links} target="_blank" href={face}>
                 <i className="bi bi-facebook"></i>
             </a>
+            
             <a className={styles.links} target="_blank" href={tiktok}>
                 <i className="bi bi-tiktok"></i>
             </a>
+
         </nav>     
     )
 }
