@@ -1,27 +1,10 @@
-// import styles from "@/styles/Home.module.css";
-import { useState } from "react";
-
 import Head from "next/head";
 
 import Footer from '@/pages/components/Footer/Footer.jsx';
 import Header from '@/pages/components/Header/Header.jsx';
 import Home from "./components/Home/Home.jsx";
-import Manifesto from "./components/Manifesto/Manifesto.jsx";
 
 export default function App() {
-
-  const inicio = <Home />;
-  const manifesto = <Manifesto />
-
-  const [main, setMain]= useState(inicio);
-
-function handleHome(){
-  setMain(inicio)
-}
-
-function handleManifesto(){
-  setMain(manifesto)
-}
 
   const title = 'Thiago Andrade'
 
@@ -34,14 +17,11 @@ function handleManifesto(){
 
       <div className={`body`}>
 
-        <Header 
-          botaoHome={handleHome}
-          botaoManifesto={handleManifesto}
-        />
+        <Header />
 
         <main className={'main'}>
 
-          {main}
+          <Home />
 
         </main>
 

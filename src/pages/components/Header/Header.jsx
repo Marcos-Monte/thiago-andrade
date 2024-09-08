@@ -1,6 +1,7 @@
 import styles from './Header.module.css';
 
 import Logotype from '@/pages/components/Logotype/Logotype.jsx';
+import Link from 'next/link';
 import Logo from '../../../../public/assets/Thiago Andrade - horizontal - branco.png';
 
 
@@ -17,19 +18,20 @@ export default function Header(props){
                 />
                 <nav className={`${styles.navigation} limit`}>
 
-                    <button 
+                    <Link 
+                        href={'/'}
                         className={styles.button}
-                        onClick={props.botaoHome}
                     >
                         Home
-                    </button>
+                    </Link>
 
-                    <button 
+                    <Link 
+                        href={'/manifesto'}
                         className={styles.button}
-                        onClick={props.botaoManifesto}
                     >
                         Manifesto
-                    </button>
+                    </Link>
+
                 </nav>
 
             </div>
