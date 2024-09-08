@@ -1,8 +1,10 @@
+import Image from 'next/image';
+
 import styles from './Header.module.css';
 
-import Logotype from '@/pages/components/Logotype/Logotype.jsx';
+// import Logotype from '@/pages/components/Logotype/Logotype.jsx';
 import Link from 'next/link';
-import Logo from '../../../../public/assets/Thiago Andrade - horizontal - branco.png';
+// import Logo from '../../../../public/assets/Thiago Andrade - horizontal - branco.png';
 import Menu from '../Menu/Menu.jsx';
 
 
@@ -14,10 +16,14 @@ export default function Header(){
             <Menu />
 
             <div className={`${styles.container} limit`}>
-                
-                <Logotype 
-                        style={styles.image}
-                        logo={Logo}
+
+                <Image 
+                    className={styles.image}
+                    width={0}
+                    height={0}
+                    src='/assets/Thiago Andrade - horizontal - branco.png'
+                    alt='Logotipo da Campanha na cor branca com o número do vereador 65123'
+                    layout='responsive'
                 />
                 <nav className={`${styles.navigation} limit`}>
 

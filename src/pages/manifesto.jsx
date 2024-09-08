@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Manifesto from "./components/Manifesto/Manifesto";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
+import Manifesto from "./components/Manifesto/Manifesto.jsx";
 
 export default function manifest(){
 

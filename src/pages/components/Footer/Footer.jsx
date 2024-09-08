@@ -1,7 +1,8 @@
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
-import Logo from "../../../../public/assets/Thiago Andrade - vertical - branco.png";
-import Logotype from "../Logotype/Logotype";
+// import Logo from "../../../../public/assets/Thiago Andrade - vertical - branco.png";
+// import Logotype from "../Logotype/Logotype";
 import Midias from "../Midias/Midias";
 import FormNewsletter from "../Newsletter/Newsletter.jsx";
 
@@ -12,7 +13,16 @@ export default function Footer() {
       <div className={`${styles.container} limit`}>
         
         <div className={styles.containerLinks}>
-          <Logotype style={styles.image} logo={Logo} />
+          {/* <Logotype style={styles.image} logo={Logo} /> */}
+
+          <Image 
+            className={styles.image}
+            src="/assets/Thiago Andrade - vertical - branco.png"
+            alt="Logo Thiago Andrade"
+            width={0}
+            height={0}
+            layout="responsive"
+          />
 
           <Midias style={styles.boxMidias} />
         </div>

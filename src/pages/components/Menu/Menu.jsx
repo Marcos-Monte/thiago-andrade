@@ -1,10 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from "./Menu.module.css";
 
 import { useState } from 'react';
-import Logo from '../../../../public/assets/Thiago Andrade - horizontal - branco.png';
-import Logotype from "../Logotype/Logotype";
 
 export default function Menu() {
 
@@ -24,9 +23,13 @@ export default function Menu() {
         <div className={`${styles.containerMenu}`}>
 
             <div className={styles.boxMenu}>
-                <Logotype 
-                    style={styles.image}
-                    logo={Logo}
+                <Image 
+                    className={styles.image}
+                    width={0}
+                    height={0}
+                    src='/assets/Thiago Andrade - horizontal - branco.png'
+                    alt='Logotipo da Campanha na cor branca com o número do vereador 65123'
+                    layout='responsive'
                 />
 
                 <button 

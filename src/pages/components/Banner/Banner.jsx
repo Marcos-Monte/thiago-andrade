@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import styles from '@/pages/components/Banner/Banner.module.css';
 
-import BannerAmarelo from '../../../../public/assets/thiago-site-amarelo.png';
-import BannerRosa from '../../../../public/assets/thiago-site-rosa.png';
+// import BannerAmarelo from '../../../../public/assets/thiago-site-amarelo.png';
+// import BannerRosa from '../../../../public/assets/thiago-site-rosa.png';
 
 export default function BannerPrimary(){
     return(
@@ -11,8 +11,11 @@ export default function BannerPrimary(){
 
                 <Image 
                     className={styles.imagem}
-                    src={BannerRosa}
-                    alt='Banner' 
+                    src='/assets/thiago-site-rosa.png'
+                    alt='Banner da Página Home' 
+                    width={0}
+                    height={0}
+                    layout="responsive"
                 />
                 
         </section>
@@ -27,8 +30,11 @@ export function BannerSecondary(){
 
             <Image 
                 className={styles.imagem}
-                src={BannerAmarelo}
-                alt='Banner' 
+                src='/assets/thiago-site-rosa.png'
+                alt='Banner da Página Manifesto' 
+                width={0}
+                height={0}
+                layout="responsive"
             />
             
         </section>
