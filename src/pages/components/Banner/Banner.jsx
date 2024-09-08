@@ -30,7 +30,7 @@ export function BannerSecondary(){
 
             <Image 
                 className={styles.imagem}
-                src='/assets/thiago-site-rosa.png'
+                src='/assets/thiago-site-amarelo.png'
                 alt='Banner da Página Manifesto' 
                 width={0}
                 height={0}
