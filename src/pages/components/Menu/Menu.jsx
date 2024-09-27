@@ -8,13 +8,16 @@ import { useState } from 'react';
 export default function Menu() {
 
     const [visibility, setVisibility] = useState('hidden');
+    const [openMenu, setOpenMenu] = useState('closed')
 
     function changeVisibility(){
         if(visibility === 'hidden'){
             setVisibility('visible')
+            setOpenMenu('open')
             console.log(visibility)
         } else {
             setVisibility('hidden')
+            setOpenMenu('closed')
             console.log(visibility)
         }
     }
@@ -24,7 +27,7 @@ export default function Menu() {
 
             <div className={styles.boxMenu}>
                 <Image 
-                    className={styles.image}
+                    className={`${styles.image} `}
                     width={0}
                     height={0}
                     src='/assets/Thiago Andrade - horizontal - branco.png'
@@ -33,7 +36,7 @@ export default function Menu() {
                 />
 
                 <button 
-                    className={`${styles.menu}`} 
+                    className={`${styles.menu} ${styles[openMenu]}`} 
                     onClick={changeVisibility}
                 >
                     <i className="bi bi-menu-button"></i>
@@ -41,21 +44,24 @@ export default function Menu() {
             </div>
             
 
-            <div className={`${styles.retractMenu} ${styles[visibility]}`}>
+            <div className={`${styles.retractMenu}`}>
                 
-                <Link 
-                    href={'/'}
-                    className={styles.button}
-                >
-                    Home
-                </Link>
+                <div className={`${styles.links} ${styles[visibility]}`}>
+                    <Link 
+                        href={'/'}
+                        className={styles.button}
+                    >
+                        Home
+                    </Link>
 
-                <Link 
-                    href={'/manifesto'}
-                    className={styles.button}
-                >
-                    Manifesto
-                </Link>
+                    <Link 
+                        href={'/manifesto'}
+                        className={styles.button}
+                    >
+                        Manifesto
+                    </Link>
+                </div>
+
             </div>
         </div>
     );
